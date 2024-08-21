@@ -1,0 +1,348 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="AtmelStart" target="8" version="2">
+  <project Name="AtmelStart">
+    <configuration
+      CMSIS_CORE="Yes"
+      Name="Common"
+      Placement="RAM"
+      Target="ATSAME54P20A"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_interwork="No"
+      arm_linker_heap_size="10240"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="102400"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_filename="$(TargetsDir)/SAM_D5x_E5x/Simulator/SAM_D5x_E5x_SimulatorMemory_$(HostOS)_$(HostArch)$(HostDLLExt)"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
+      arm_target_debug_interface_type="ADIv5"
+      arm_target_device_name="ATSAME54P20"
+      arm_target_interface_type="SWD"
+      arm_target_loader_applicable_loaders=""
+      arm_target_loader_default_loader=""
+      c_user_include_directories="hal/include;hal/utils/include;hri;.;examples;hpl/core;hpl/gclk;hpl/pm;hpl/port;hpl/tcc;config;include;gcc;$(DeviceIncludePath);rtos;rtos/include;rtos/portable/GCC/ARM_CM4F;rtos/portable/MemMang"
+      debug_register_definition_file="$(ProjectDir)/ATSAME54P20A_Registers.xml"
+      gcc_entry_point="Reset_Handler"
+      link_linker_script_file="$(ProjectDir)/SAME54_Flash.icf"
+      link_use_linker_script_file="Yes"
+      linker_memory_map_file="$(ProjectDir)/ATSAME54P20A_MemoryMap.xml"
+      linker_printf_fp_enabled="Float"
+      linker_section_placement_file="$(ProjectDir)/SAME54_Flash.icf"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
+      macros="DeviceIncludePath=$(TargetsDir)/SAM_D5x_E5x/CMSIS/SAME54/include;DeviceHeaderFile=$(PackagesDir)/SAME54/CMSIS/Device/Include/sam.h;DeviceLoaderFile=$(TargetsDir)/SAM_D5x_E5x/Loader/SAME54_Loader.elf;DeviceMemoryMapFile=$(TargetsDir)/SAM_D5x_E5x/XML/ATSAME54P20A_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/SAM_D5x_E5x/XML/ATSAME54P20A_Registers.xml;DeviceSystemFile=$(PackagesDir)/SAME54/CMSIS/Device/Source/system_same54.c;DeviceVectorsFile=$(PackagesDir)/SAME54/Source/ATSAME54P20A_Vectors.s;DeviceLibraryIdentifier=M4lf;DeviceFamily=SAM D5x/E5x;DeviceSubFamily=SAME54;Target=ATSAME54P20A"
+      package_dependencies="SAM_D5x_E5x"
+      project_directory=""
+      project_type="Executable"
+      property_groups_file_path="$(TargetsDir)/SAM_D5x_E5x/XML/property_groups.xml"
+      target_connect_script=""
+      target_get_partname_script="GetPartName()"
+      target_match_partname_script="MatchPartName(&quot;$(Target)&quot;)"
+      target_reset_script="Reset();"
+      target_script_file="$(ProjectDir)/SAME54_Target.js"
+      target_trace_initialize_script="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <configuration
+      Name="Flash"
+      arm_target_flash_loader_file_path="$(DeviceLoaderFile)" />
+    <folder Name="CMSIS Files">
+      <file file_name="SAME54/CMSIS/Device/Include/sam.h" />
+    </folder>
+    <folder Name="Script Files">
+      <file file_name="SAME54_Target.js" />
+    </folder>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="main.c" />
+      <folder Name="RTT">
+        <file file_name="SEGGER_RTT.c">
+          <configuration Name="Simulator" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="SEGGER_RTT_Conf.h">
+          <configuration Name="Simulator" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="SEGGER_RTT.h">
+          <configuration Name="Simulator" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="SEGGER_RTT_SES.c">
+          <configuration Name="Simulator" build_exclude_from_build="Yes" />
+        </file>
+      </folder>
+      <folder Name="CoreMark">
+        <file file_name="core_list_join.c" />
+        <file file_name="core_main.c" />
+        <file file_name="coremark.h" />
+        <file file_name="core_matrix.c" />
+        <file file_name="core_portme.c" />
+        <file file_name="core_portme.h" />
+        <file file_name="core_state.c" />
+        <file file_name="core_util.c" />
+      </folder>
+      <file file_name="typedefs.h" />
+      <file file_name="debug_cpu_cycles.h" />
+      <folder Name="RTOS">
+        <file file_name="rtos/croutine.c" />
+        <file file_name="rtos/event_groups.c" />
+        <file file_name="rtos/list.c" />
+        <file file_name="rtos/queue.c" />
+        <file file_name="rtos/stream_buffer.c" />
+        <file file_name="rtos/tasks.c" />
+        <file file_name="rtos/timers.c" />
+        <folder Name="include">
+          <file file_name="rtos/include/atomic.h" />
+          <file file_name="rtos/include/croutine.h" />
+          <file file_name="rtos/include/deprecated_definitions.h" />
+          <file file_name="rtos/include/event_groups.h" />
+          <file file_name="rtos/include/FreeRTOS.h" />
+          <file file_name="rtos/include/list.h" />
+          <file file_name="rtos/include/message_buffer.h" />
+          <file file_name="rtos/include/mpu_prototypes.h" />
+          <file file_name="rtos/include/mpu_wrappers.h" />
+          <file file_name="rtos/include/portable.h" />
+          <file file_name="rtos/include/projdefs.h" />
+          <file file_name="rtos/include/queue.h" />
+          <file file_name="rtos/include/semphr.h" />
+          <file file_name="rtos/include/stack_macros.h" />
+          <file file_name="rtos/include/StackMacros.h" />
+          <file file_name="rtos/include/stream_buffer.h" />
+          <file file_name="rtos/include/task.h" />
+          <file file_name="rtos/include/timers.h" />
+        </folder>
+        <folder Name="portable">
+          <folder Name="GCC">
+            <folder Name="ARM_CM4F">
+              <file file_name="rtos/portable/GCC/ARM_CM4F/port.c" />
+              <file file_name="rtos/portable/GCC/ARM_CM4F/portmacro.h" />
+            </folder>
+          </folder>
+          <folder Name="MemMang">
+            <file file_name="rtos/portable/MemMang/heap_1.c" />
+          </folder>
+        </folder>
+        <file file_name="rtos/FreeRTOSConfig.h" />
+      </folder>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="ATSAME54P20A_Vectors.s">
+        <configuration Name="THUMB Debug" build_exclude_from_build="No" />
+      </file>
+      <file file_name="SAME54_Startup.s">
+        <configuration Name="THUMB Debug" build_exclude_from_build="No" />
+      </file>
+      <file file_name="SEGGER_THUMB_Startup.s">
+        <configuration Name="THUMB Debug" build_exclude_from_build="No" />
+      </file>
+    </folder>
+    <folder Name="Framework">
+      <file file_name="hal/include/hal_atomic.h" />
+      <file file_name="hal/include/hal_cache.h" />
+      <file file_name="hal/include/hal_delay.h" />
+      <file file_name="hal/include/hal_gpio.h" />
+      <file file_name="hal/include/hal_init.h" />
+      <file file_name="hal/include/hal_io.h" />
+      <file file_name="hal/include/hal_sleep.h" />
+      <file file_name="hal/include/hpl_cmcc.h" />
+      <file file_name="hal/include/hpl_core.h" />
+      <file file_name="hal/include/hpl_delay.h" />
+      <file file_name="hal/include/hpl_dma.h" />
+      <file file_name="hal/include/hpl_gpio.h" />
+      <file file_name="hal/include/hpl_init.h" />
+      <file file_name="hal/include/hpl_irq.h" />
+      <file file_name="hal/include/hpl_ramecc.h" />
+      <file file_name="hal/include/hpl_sleep.h" />
+      <file file_name="hal/src/hal_atomic.c" />
+      <file file_name="hal/src/hal_cache.c" />
+      <file file_name="hal/src/hal_delay.c" />
+      <file file_name="hal/src/hal_gpio.c" />
+      <file file_name="hal/src/hal_init.c" />
+      <file file_name="hal/src/hal_io.c" />
+      <file file_name="hal/src/hal_sleep.c" />
+      <file file_name="hal/utils/include/compiler.h" />
+      <file file_name="hal/utils/include/err_codes.h" />
+      <file file_name="hal/utils/include/events.h" />
+      <file file_name="hal/utils/include/utils.h" />
+      <file file_name="hal/utils/include/utils_assert.h" />
+      <file file_name="hal/utils/include/utils_event.h" />
+      <file file_name="hal/utils/include/utils_increment_macro.h" />
+      <file file_name="hal/utils/include/utils_list.h" />
+      <file file_name="hal/utils/include/utils_repeat_macro.h" />
+      <file file_name="hal/utils/src/utils_assert.c" />
+      <file file_name="hal/utils/src/utils_event.c" />
+      <file file_name="hal/utils/src/utils_list.c" />
+      <file file_name="hal/utils/src/utils_syscalls.c" />
+      <file file_name="hpl/doc_lite/tcc.rst" />
+      <file file_name="hri/hri_ac_e54.h" />
+      <file file_name="hri/hri_adc_e54.h" />
+      <file file_name="hri/hri_aes_e54.h" />
+      <file file_name="hri/hri_can_e54.h" />
+      <file file_name="hri/hri_ccl_e54.h" />
+      <file file_name="hri/hri_cmcc_e54.h" />
+      <file file_name="hri/hri_dac_e54.h" />
+      <file file_name="hri/hri_dmac_e54.h" />
+      <file file_name="hri/hri_dsu_e54.h" />
+      <file file_name="hri/hri_e54.h" />
+      <file file_name="hri/hri_eic_e54.h" />
+      <file file_name="hri/hri_evsys_e54.h" />
+      <file file_name="hri/hri_freqm_e54.h" />
+      <file file_name="hri/hri_gclk_e54.h" />
+      <file file_name="hri/hri_gmac_e54.h" />
+      <file file_name="hri/hri_hmatrixb_e54.h" />
+      <file file_name="hri/hri_i2s_e54.h" />
+      <file file_name="hri/hri_icm_e54.h" />
+      <file file_name="hri/hri_mclk_e54.h" />
+      <file file_name="hri/hri_nvmctrl_e54.h" />
+      <file file_name="hri/hri_osc32kctrl_e54.h" />
+      <file file_name="hri/hri_oscctrl_e54.h" />
+      <file file_name="hri/hri_pac_e54.h" />
+      <file file_name="hri/hri_pcc_e54.h" />
+      <file file_name="hri/hri_pdec_e54.h" />
+      <file file_name="hri/hri_pm_e54.h" />
+      <file file_name="hri/hri_port_e54.h" />
+      <file file_name="hri/hri_qspi_e54.h" />
+      <file file_name="hri/hri_ramecc_e54.h" />
+      <file file_name="hri/hri_rstc_e54.h" />
+      <file file_name="hri/hri_rtc_e54.h" />
+      <file file_name="hri/hri_sdhc_e54.h" />
+      <file file_name="hri/hri_sercom_e54.h" />
+      <file file_name="hri/hri_supc_e54.h" />
+      <file file_name="hri/hri_tc_e54.h" />
+      <file file_name="hri/hri_tcc_e54.h" />
+      <file file_name="hri/hri_trng_e54.h" />
+      <file file_name="hri/hri_usb_e54.h" />
+      <file file_name="hri/hri_wdt_e54.h" />
+      <file file_name="driver_init.c" />
+      <file file_name="driver_init.h" />
+      <file file_name="atmel_start_pins.h" />
+      <file file_name="hal/include/hpl_missing_features.h" />
+      <file file_name="hal/include/hpl_reset.h" />
+      <file file_name="hal/utils/include/parts.h" />
+      <file file_name="hpl/cmcc/hpl_cmcc.c" />
+      <file file_name="hpl/core/hpl_core_m4.c" />
+      <file file_name="hpl/core/hpl_core_port.h" />
+      <file file_name="hpl/core/hpl_init.c" />
+      <file file_name="hpl/dmac/hpl_dmac.c" />
+      <file file_name="hpl/gclk/hpl_gclk.c" />
+      <file file_name="hpl/gclk/hpl_gclk_base.h" />
+      <file file_name="hpl/mclk/hpl_mclk.c" />
+      <file file_name="hpl/osc32kctrl/hpl_osc32kctrl.c" />
+      <file file_name="hpl/oscctrl/hpl_oscctrl.c" />
+      <file file_name="hpl/pm/hpl_pm.c" />
+      <file file_name="hpl/pm/hpl_pm_base.h" />
+      <file file_name="hpl/port/hpl_gpio_base.h" />
+      <file file_name="hpl/ramecc/hpl_ramecc.c" />
+      <file file_name="atmel_start.h" />
+      <file file_name="atmel_start.c" />
+      <file file_name="config/hpl_cmcc_config.h" />
+      <file file_name="config/hpl_dmac_config.h" />
+      <file file_name="config/hpl_gclk_config.h" />
+      <file file_name="config/hpl_mclk_config.h" />
+      <file file_name="config/hpl_osc32kctrl_config.h" />
+      <file file_name="config/hpl_oscctrl_config.h" />
+      <file file_name="config/hpl_port_config.h" />
+      <file file_name="config/peripheral_clk_config.h" />
+      <file file_name="gcc/system_same54.c" />
+    </folder>
+    <configuration
+      Name="THUMB Debug"
+      arm_compiler_variant="SEGGER"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_library_architecture="v7EM"
+      arm_library_optimization="Fast"
+      arm_linker_heap_size="0"
+      arm_linker_stack_size="0"
+      arm_linker_variant="SEGGER"
+      arm_long_calls="Yes"
+      arm_math_errno="Yes"
+      arm_rtl_variant="SEGGER"
+      arm_unwind_tables="No"
+      debug_enable_RTT="Yes"
+      debug_register_definition_file="$(ProjectDir)/ATSAME54P20A_Registers.xml"
+      debug_target_connection="J-Link"
+      debug_threads_script="$(ProjectDir)/threads_CM4F.js"
+      gcc_enable_all_warnings="Yes"
+      gcc_omit_frame_pointer="No"
+      gcc_optimization_level="Level 1"
+      link_linker_script_file="$(ProjectDir)/SAME54_Flash.icf"
+      link_time_optimization="No"
+      linker_printf_fp_enabled="Double"
+      project_can_build_in_parallel="Yes"
+      target_connect_script="" />
+    <configuration
+      Name="Simulator"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_fp_abi="SoftFP"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_library_architecture="Default"
+      arm_library_optimization="Fast"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_filename="$(StudioDir)/bin/ARMSimulatorMemory$(HostDLL)"
+      arm_simulator_memory_simulation_parameter="ROM;0x00000000;0x00100000;RAM;0x20000000;0x00040000;"
+      c_only_additional_options=""
+      c_preprocessor_definitions="SIMULATOR"
+      debug_enable_RTT="No"
+      debug_target_connection="Simulator"
+      gcc_optimization_level="Level 0"
+      link_include_standard_libraries="Yes"
+      linker_printf_fmt_level="long long"
+      linker_printf_fp_enabled="Double"
+      target_trace_initialize_script="" />
+    <configuration
+      Name="THUMB Release"
+      arm_compiler_variant="SEGGER"
+      arm_library_architecture="v7EM"
+      arm_long_calls="Yes"
+      arm_rtl_variant="SEGGER"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="Level 3"
+      link_dedupe_code="Yes"
+      link_dedupe_data="Yes"
+      link_inline="Yes"
+      link_keep_lto_files="No"
+      link_merge_strings="Yes"
+      link_time_optimization="No" />
+  </project>
+  <configuration
+    Name="THUMB Debug"
+    debug_threads_script="$(ProjectDir)/threads_CM4F.js"
+    inherited_configurations="THUMB;Debug"
+    link_linker_script_file="$(ProjectDir)/Documents/E54_120Mhz_TCC0_32Xtal_FreeRTOS/gcc/gcc/same54p20a_flash.ld"
+    link_use_linker_script_file="Yes" />
+  <configuration
+    Name="THUMB"
+    Platform="ARM"
+    arm_instruction_set="Thumb"
+    arm_library_instruction_set="Thumb"
+    c_preprocessor_definitions="__THUMB"
+    hidden="Yes" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="THUMB Release"
+    inherited_configurations="THUMB;Release" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+  <configuration
+    Name="Common"
+    arm_linker_heap_size="10240"
+    arm_linker_stack_size="102400"
+    c_preprocessor_definitions="__SAME54P20A__;__SAME54_FAMILY;ARM_MATH_CM4"
+    c_user_include_directories="$(ProjectDir)/CMSIS_5/CMSIS/Core/Include;$(ProjectDir)/SAME54/CMSIS/Device/Include;$(ProjectDir)/SAME54/CMSIS/Device/Include/component;$(ProjectDir)/SAME54/CMSIS/Device/Include/instance;$(ProjectDir)/SAME54/CMSIS/Device/Include/pio;$(ProjectDir)/SAME54/CMSIS/Device/Include"
+    debug_register_definition_file="$(ProjectDir)/ATSAME54P20A_Registers.xml"
+    debug_target_connection="J-Link"
+    linker_memory_map_file="$(ProjectDir)/ATSAME54P20A_MemoryMap.xml"
+    macros="DeviceHeaderFile=$(PackagesDir)/SAME54/CMSIS/Device/Include/sam.h;DeviceLibraryIdentifier=M4lf;DeviceSystemFile=$(PackagesDir)/SAME54/CMSIS/Device/Source/system_same54.c;DeviceVectorsFile=$(PackagesDir)/SAME54/Source/ATSAME54P20A_Vectors.s;DeviceFamily=SAME54;Target=ATSAME54P20A" />
+  <configuration Name="Simulator" arm_architecture="v7EM" />
+</solution>

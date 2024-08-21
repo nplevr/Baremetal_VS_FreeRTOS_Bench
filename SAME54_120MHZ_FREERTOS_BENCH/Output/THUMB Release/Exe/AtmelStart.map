@@ -1,0 +1,2232 @@
+***************************************************************************************
+***                                                                                 ***
+***                                LINK INFORMATION                                 ***
+***                                                                                 ***
+***************************************************************************************
+
+Linker version:
+
+  SEGGER Linker 3.12.0 compiled Oct 16 2020 19:06:29
+  Copyright (c) 2017-2020 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 MODULE SUMMARY                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Memory use by input file:
+
+  Object File                                     RX Code   RO Data   RW Data   ZI Data
+  ---------------------------------------------  --------  --------  --------  --------
+  ATSAME54P20A_Vectors.o                              892                              
+  SAME54_Startup.o                                     60                              
+  SEGGER_RTT.o                                        516        20                1160
+  SEGGER_RTT_SES.o                                     92                              
+  SEGGER_THUMB_Startup.o                              148                              
+  core_list_join.o                                   2202                              
+  core_main.o                                        2024       932                    
+  core_matrix.o                                      4572                              
+  core_portme.o                                        92                   8        16
+  core_state.o                                       1236       256                    
+  core_util.o                                         336        20                    
+  driver_init.o                                         8                              
+  hal_cache.o                                           8                              
+  heap_1.o                                            122                         65544
+  hpl_cmcc.o                                           90                              
+  hpl_gclk.o                                           56                              
+  hpl_init.o                                           60                              
+  hpl_mclk.o                                           14                              
+  hpl_osc32kctrl.o                                     52                              
+  hpl_oscctrl.o                                       146                              
+  list.o                                              184                              
+  main.o                                              574       198                  28
+  port.o                                              996                   4         5
+  queue.o                                            2332                              
+  system_same54.o                                      40                   4          
+  tasks.o                                            2964         5                 236
+  timers.o                                           1500         8                  60
+  [ Linker created ]                                             83                    
+  ---------------------------------------------  --------  --------  --------  --------
+  Subtotal (objects):                               21316      1522        16     67049
+  ---------------------------------------------  --------  --------  --------  --------
+  libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a             8384       264                    
+  ---------------------------------------------  --------  --------  --------  --------
+  Subtotal (archives):                               8384       264                    
+  =============================================  ========  ========  ========  ========
+  Grand total (objects + archives):                 29700      1786        16     67049
+  =============================================  ========  ========  ========  ========
+
+Detailed memory use by individual object file:
+
+  Object File                                     RX Code   RO Data   RW Data   ZI Data
+  ---------------------------------------------  --------  --------  --------  --------
+  main.o                                              574       198                  28
+  SEGGER_RTT.o                                        516        20                1160
+  SEGGER_RTT_SES.o                                     92                              
+  core_list_join.o                                   2202                              
+  core_main.o                                        2024       932                    
+  core_matrix.o                                      4572                              
+  core_portme.o                                        92                   8        16
+  core_state.o                                       1236       256                    
+  core_util.o                                         336        20                    
+  list.o                                              184                              
+  queue.o                                            2332                              
+  tasks.o                                            2964         5                 236
+  timers.o                                           1500         8                  60
+  port.o                                              996                   4         5
+  heap_1.o                                            122                         65544
+  ATSAME54P20A_Vectors.o                              892                              
+  SAME54_Startup.o                                     60                              
+  SEGGER_THUMB_Startup.o                              148                              
+  hal_cache.o                                           8                              
+  driver_init.o                                         8                              
+  hpl_cmcc.o                                           90                              
+  hpl_init.o                                           60                              
+  hpl_gclk.o                                           56                              
+  hpl_mclk.o                                           14                              
+  hpl_osc32kctrl.o                                     52                              
+  hpl_oscctrl.o                                       146                              
+  system_same54.o                                      40                   4          
+  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     1944                              
+  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     1120                              
+  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      208                              
+  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                        8                              
+  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      236                              
+  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                       52                              
+  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                       88        72                    
+  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      196       160                    
+  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     4532        32                    
+  [ Linker created ]                                             83                    
+  =============================================  ========  ========  ========  ========
+  Total:                                            29700      1786        16     67049
+  =============================================  ========  ========  ========  ========
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 SECTION DETAIL                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Sections by address:
+
+  Section                  Range                  Size  Align  Type  Object File
+  -----------------------  -----------------  --------  -----  ----  -----------
+  .vectors                 00000000-00000263     0x264      4  Code  ATSAME54P20A_Vectors.o
+  .text._oscctrl_init_sources
+                           00000264-00000265       0x2      2  Code  hpl_oscctrl.o
+  ( UNUSED .=.+2 )         00000266-00000267       0x2      -  ----  -
+  .text.coremain           00000268-00000a4f     0x7e8      8  Code  core_main.o
+  .text.time_in_secs       00000a50-00000a7f      0x30      8  Code  core_portme.o
+  .text.SVC_Handler        00000a80-00000aa3      0x24     16  Code  port.o
+  .text.crc16              00000aa4-00000aaf       0xc      4  Code  core_util.o
+  .text.PendSV_Handler     00000ab0-00000b13      0x64     16  Code  port.o
+  .text.check_data_types   00000b14-00000b17       0x4      2  Code  core_util.o
+  .text.libc.ldexp         00000b18-00000b7f      0x68      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.frexp         00000b80-00000bc7      0x48      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.fmod          00000bc8-00000e5b     0x294      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .init_array              00000e5c-00000e5f       0x4      4  ----  SAME54_Startup.o
+  .text.libc.floor         00000e60-00000f23      0xc4      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata..L.str.1         00000f24-00000f27       0x4      1  Cnst  SEGGER_RTT.o
+  .text.libc.__SEGGER_RTL_vfprintf_short_float_long
+                           00000f28-000020db    0x11b4      8  Code  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    000020dc-000020df       0x4      1  Cnst  [ Linker created ]
+  .rodata.libc.__SEGGER_RTL_aPower2
+                           000020e0-00002127      0x48      8  Cnst  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.libc.__SEGGER_RTL_ipow10
+                           00002128-000021c7      0xa0      8  Cnst  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.benchmark_thread_1
+                           000021c8-00002247      0x80      4  Code  main.o
+  .text.benchmark_thread_2
+                           00002248-000022c7      0x80      4  Code  main.o
+  .text.vApplicationStackOverflowHook
+                           000022c8-00002303      0x3c      4  Code  main.o
+  .text.main               00002304-000023e7      0xe4      4  Code  main.o
+  .text.SEGGER_RTT_WriteNoLock
+                           000023e8-0000254b     0x164      4  Code  SEGGER_RTT.o
+  .text.SEGGER_RTT_Write   0000254c-000025eb      0xa0      4  Code  SEGGER_RTT.o
+  .text.printf             000025ec-00002647      0x5c      4  Code  SEGGER_RTT_SES.o
+  .text.calc_func          00002648-000026d7      0x90      4  Code  core_list_join.o
+  .text.core_bench_list    000026d8-00002b47     0x470      4  Code  core_list_join.o
+  .text.core_bench_matrix  00002b48-00002b6f      0x28      4  Code  core_matrix.o
+  .text.matrix_test        00002b70-00003ae7     0xf78      4  Code  core_matrix.o
+  .text.core_init_matrix   00003ae8-00003d23     0x23c      4  Code  core_matrix.o
+  .text.core_bench_state   00003d24-00003f63     0x240      4  Code  core_state.o
+  .text.core_state_transition
+                           00003f64-000040ab     0x148      4  Code  core_state.o
+  .text.core_init_state    000040ac-000041f7     0x14c      4  Code  core_state.o
+  .text.crcu32             000041f8-00004217      0x20      4  Code  core_util.o
+  .text.xQueueGenericCreate
+                           00004218-000042a7      0x90      4  Code  queue.o
+  .text.xQueueGenericSend  000042a8-0000456f     0x2c8      4  Code  queue.o
+  .text.prvCopyDataToQueue
+                           00004570-000045ef      0x80      4  Code  queue.o
+  .text.prvUnlockQueue     000045f0-0000474b     0x15c      4  Code  queue.o
+  .text.xQueueGenericSendFromISR
+                           0000474c-000048eb     0x1a0      4  Code  queue.o
+  .text.xQueueReceive      000048ec-00004ad3     0x1e8      4  Code  queue.o
+  .text.vQueueWaitForMessageRestricted
+                           00004ad4-00004b33      0x60      4  Code  queue.o
+  .text.xTaskCreate        00004b34-00004d7b     0x248      4  Code  tasks.o
+  .text.vTaskDelay         00004d7c-00004e57      0xdc      4  Code  tasks.o
+  .text.prvAddCurrentTaskToDelayedList
+                           00004e58-00004f07      0xb0      4  Code  tasks.o
+  .text.xTaskResumeAll     00004f08-0000507b     0x174      4  Code  tasks.o
+  .text.vTaskSwitchContext
+                           0000507c-0000511b      0xa0      4  Code  tasks.o
+  .text.vTaskStartScheduler
+                           0000511c-000051bb      0xa0      4  Code  tasks.o
+  .text.xTaskIncrementTick
+                           000051bc-0000533b     0x180      4  Code  tasks.o
+  .text.vTaskPlaceOnEventList
+                           0000533c-0000537b      0x40      4  Code  tasks.o
+  .text.vTaskPlaceOnEventListRestricted
+                           0000537c-00005443      0xc8      4  Code  tasks.o
+  .text.xTaskRemoveFromEventList
+                           00005444-000054e7      0xa4      4  Code  tasks.o
+  .text.xTaskCheckForTimeOut
+                           000054e8-0000557b      0x94      4  Code  tasks.o
+  .text.xTaskPriorityDisinherit
+                           0000557c-00005637      0xbc      4  Code  tasks.o
+  .text.xTimerCreateTimerTask
+                           00005638-000056eb      0xb4      4  Code  timers.o
+  .text.prvTimerTask       000056ec-000059d7     0x2ec      4  Code  timers.o
+  .text.xTimerCreate       000059d8-00005aaf      0xd8      4  Code  timers.o
+  .text.xTimerGenericCommand
+                           00005ab0-00005b2f      0x80      4  Code  timers.o
+  .text.prvSampleTimeNow   00005b30-00005c13      0xe4      4  Code  timers.o
+  .text.xPortStartScheduler
+                           00005c14-00005da3     0x190      4  Code  port.o
+  .text.vPortEnableVFP     00005da4-00005db7      0x14      4  Code  port.o
+  .text.prvPortStartFirstTask
+                           00005db8-00005ddf      0x28      4  Code  port.o
+  .text.SysTick_Handler    00005de0-00005e13      0x34      4  Code  port.o
+  .text.pvPortMalloc       00005e14-00005e73      0x60      4  Code  heap_1.o
+  .text.cache_init         00005e74-00005e7b       0x8      4  Code  hal_cache.o
+  .text.system_init        00005e7c-00005e83       0x8      4  Code  driver_init.o
+  .text._init_chip         00005e84-00005ebf      0x3c      4  Code  hpl_init.o
+  .text._gclk_init_generators_by_fref
+                           00005ec0-00005ef7      0x38      4  Code  hpl_gclk.o
+  .text._oscctrl_init_referenced_generators
+                           00005ef8-00005f87      0x90      4  Code  hpl_oscctrl.o
+  .text.__aeabi_dadd       00005f88-000061cb     0x244      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dsub       000061cc-000061d3       0x8      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dmul       000061d4-0000630b     0x138      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ddiv       0000630c-000064d7     0x1cc      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpeq     000064d8-0000650b      0x34      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpge     0000650c-00006547      0x3c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpgt     00006548-0000657f      0x38      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmplt     00006580-000065b7      0x38      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_d2uiz      000065b8-000065df      0x28      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_d2ulz      000065e0-0000661f      0x40      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ui2d       00006620-0000663b      0x1c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ul2d       0000663c-00006697      0x5c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_f2d        00006698-000066cb      0x34      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_d2f        000066cc-0000671f      0x54      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_isnan
+                           00006720-00006747      0x28      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_isinf
+                           00006748-0000676f      0x28      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_signbit
+                           00006770-00006777       0x8      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_uldivmod   00006778-00006847      0xd0      4  Code  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.abs           00006848-0000684f       0x8      4  Code  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.strcpy             00006850-0000688f      0x40      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.strlen             00006890-000068eb      0x5c      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.memcpy             000068ec-0000693b      0x50      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.strnlen       0000693c-0000696f      0x34      4  Code  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_pow10
+                           00006970-000069c7      0x58      4  Code  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_putc
+                           000069c8-00006a23      0x5c      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_print_padding
+                           00006a24-00006a3f      0x1c      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_pre_padding
+                           00006a40-00006a67      0x28      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.vsnprintf     00006a68-00006a8b      0x24      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.intpat           00006a8c-00006a9b      0x10      4  Cnst  core_state.o
+  .rodata.floatpat         00006a9c-00006aab      0x10      4  Cnst  core_state.o
+  .rodata.scipat           00006aac-00006abb      0x10      4  Cnst  core_state.o
+  .rodata.errpat           00006abc-00006acb      0x10      4  Cnst  core_state.o
+  .rodata..Lswitch.table.core_init_state
+                           00006acc-00006aeb      0x20      4  Cnst  core_state.o
+  .rodata..Lswitch.table.core_init_state.16
+                           00006aec-00006b0b      0x20      4  Cnst  core_state.o
+  .rodata..Lswitch.table.get_seed_32
+                           00006b0c-00006b1f      0x14      4  Cnst  core_util.o
+  .rodata.libc.__SEGGER_RTL_hex_lc
+                           00006b20-00006b2f      0x10      4  Cnst  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.libc.__SEGGER_RTL_hex_uc
+                           00006b30-00006b3f      0x10      4  Cnst  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .init                    00006b40-00006c57     0x118      4  Code  ATSAME54P20A_Vectors.o
+  .init                    00006c58-00006c93      0x3c      4  Code  SAME54_Startup.o
+  .init                    00006c94-00006cf7      0x64      4  Code  SEGGER_THUMB_Startup.o
+  .text.core_list_init     00006cf8-00007091     0x39a      4  Code  core_list_join.o
+  .text.SoftTimer_CALLBACK
+                           00007092-000070af      0x1e      2  Code  main.o
+  .text.vListInsert        000070b0-0000710d      0x5e      4  Code  list.o
+  .text.portable_init      0000710e-00007113       0x6      2  Code  core_portme.o
+  .text.prvIdleTask        00007114-00007139      0x26      4  Code  tasks.o
+  .text.portable_fini      0000713a-0000713f       0x6      2  Code  core_portme.o
+  .text.prvTaskExitError   00007140-0000717d      0x3e      4  Code  port.o
+  .text.get_seed_32        0000717e-00007197      0x1a      2  Code  core_util.o
+  .text.vPortEnterCritical
+                           00007198-000071e1      0x4a      4  Code  port.o
+  .text.crcu16             000071e2-000072e7     0x106      2  Code  core_util.o
+  .text.vPortExitCritical  000072e8-00007315      0x2e      4  Code  port.o
+  .text.vListInitialise    00007316-0000732b      0x16      2  Code  list.o
+  .text.vPortValidateInterruptPriority
+                           0000732c-0000738d      0x62      4  Code  port.o
+  .text.vListInitialiseItem
+                           0000738e-00007393       0x6      2  Code  list.o
+  .text.vPortFree          00007394-000073ad      0x1a      4  Code  heap_1.o
+  .text.uxListRemove       000073ae-000073cf      0x22      2  Code  list.o
+  .text._cmcc_init         000073d0-00007429      0x5a      4  Code  hpl_cmcc.o
+  .text.vTaskInternalSetTimeOutState
+                           0000742a-00007443      0x1a      2  Code  tasks.o
+  .text.vTaskMissedYield   00007444-00007451       0xe      2  Code  tasks.o
+  .text.xTaskGetSchedulerState
+                           00007452-00007477      0x26      2  Code  tasks.o
+  .text.pxPortInitialiseStack
+                           00007478-0000749d      0x26      2  Code  port.o
+  .text.vPortSetupTimerInterrupt
+                           0000749e-000074bb      0x1e      2  Code  port.o
+  .text._mclk_init         000074bc-000074c9       0xe      2  Code  hpl_mclk.o
+  .rodata.list_known_crc   000074ca-000074d3       0xa      2  Cnst  core_main.o
+  .rodata.matrix_known_crc
+                           000074d4-000074dd       0xa      2  Cnst  core_main.o
+  .rodata.state_known_crc  000074de-000074e7       0xa      2  Cnst  core_main.o
+  .text.start_time         000074e8-000074f3       0xc      2  Code  core_portme.o
+  .text.get_time           000074f4-00007507      0x14      2  Code  core_portme.o
+  .text.vListInsertEnd     00007508-00007523      0x1c      2  Code  list.o
+  .text.vTaskSuspendAll    00007524-00007533      0x10      2  Code  tasks.o
+  .text.xTaskGetTickCount  00007534-0000753f       0xc      2  Code  tasks.o
+  .text._osc32kctrl_init_sources
+                           00007540-00007573      0x34      2  Code  hpl_osc32kctrl.o
+  .text.SystemInit         00007574-00007587      0x14      2  Code  system_same54.o
+  .text.SystemCoreClockUpdate
+                           00007588-0000759b      0x14      2  Code  system_same54.o
+  .rodata..L.str.10        0000759c-000075b2      0x17      1  Cnst  main.o
+  .rodata..L.str.11        000075b3-000075b9       0x7      1  Cnst  main.o
+  .rodata..L.str.12        000075ba-000075c0       0x7      1  Cnst  main.o
+  .rodata..L.str.13        000075c1-000075cb       0xb      1  Cnst  main.o
+  .rodata..L.str.2         000075cc-000075d2       0x7      1  Cnst  SEGGER_RTT.o
+  .rodata..L.str.8         000075d3-00007601      0x2f      1  Cnst  core_main.o
+  .rodata..L.str.13        00007602-00007618      0x17      1  Cnst  core_main.o
+  .rodata..L.str.14        00007619-0000762f      0x17      1  Cnst  core_main.o
+  .rodata..L.str.17        00007630-00007646      0x17      1  Cnst  core_main.o
+  .rodata..L.str.19        00007647-0000765d      0x17      1  Cnst  core_main.o
+  .rodata..L.str.21        0000765e-00007678      0x1b      1  Cnst  core_main.o
+  .rodata..L.str.28        00007679-000076db      0x63      1  Cnst  core_main.o
+  .rodata.str.(null).merge
+                           000076dc-000076e2       0x7      1  Cnst  [ Linker created ]
+  .rodata..L.str.2         000076e3-00007700      0x1e      1  Cnst  main.o
+  .rodata..L.str.9         00007701-0000770e       0xe      1  Cnst  main.o
+  .rodata..L.str.15        0000770f-0000774c      0x3e      1  Cnst  core_main.o
+  .rodata..L.str.18        0000774d-0000775a       0xe      1  Cnst  core_main.o
+  .rodata..L.str.20        0000775b-00007760       0x6      1  Cnst  core_main.o
+  .rodata..L.str.26        00007761-0000777e      0x1e      1  Cnst  core_main.o
+  .rodata..L.str.1         0000777f-00007793      0x15      1  Cnst  main.o
+  .rodata..L.str.4         00007794-000077a8      0x15      1  Cnst  main.o
+  .rodata..L.str           000077a9-000077b1       0x9      1  Cnst  SEGGER_RTT.o
+  .rodata..L.str.3         000077b2-000077de      0x2d      1  Cnst  core_main.o
+  .rodata..L.str.5         000077df-0000780f      0x31      1  Cnst  core_main.o
+  .rodata..L.str.6         00007810-0000783c      0x2d      1  Cnst  core_main.o
+  .rodata..L.str.9         0000783d-0000786d      0x31      1  Cnst  core_main.o
+  .rodata..L.str.27        0000786e-0000787e      0x11      1  Cnst  core_main.o
+  .rodata..L.str           0000787f-00007883       0x5      1  Cnst  core_state.o
+  .rodata..L.str.1         00007884-00007888       0x5      1  Cnst  core_state.o
+  .rodata..L.str.2         00007889-0000788d       0x5      1  Cnst  core_state.o
+  .rodata..L.str.3         0000788e-00007892       0x5      1  Cnst  core_state.o
+  .rodata..L.str.4         00007893-0000789b       0x9      1  Cnst  core_state.o
+  .rodata..L.str.5         0000789c-000078a4       0x9      1  Cnst  core_state.o
+  .rodata..L.str.6         000078a5-000078ad       0x9      1  Cnst  core_state.o
+  .rodata..L.str.7         000078ae-000078b6       0x9      1  Cnst  core_state.o
+  .rodata..L.str.8         000078b7-000078bf       0x9      1  Cnst  core_state.o
+  .rodata..L.str.9         000078c0-000078c8       0x9      1  Cnst  core_state.o
+  .rodata..L.str.10        000078c9-000078d1       0x9      1  Cnst  core_state.o
+  .rodata..L.str.11        000078d2-000078da       0x9      1  Cnst  core_state.o
+  .rodata..L.str.12        000078db-000078e3       0x9      1  Cnst  core_state.o
+  .rodata..L.str.13        000078e4-000078ec       0x9      1  Cnst  core_state.o
+  .rodata..L.str.14        000078ed-000078f5       0x9      1  Cnst  core_state.o
+  .rodata..L.str.15        000078f6-000078fe       0x9      1  Cnst  core_state.o
+  .rodata..L.str           000078ff-00007903       0x5      1  Cnst  tasks.o
+  .rodata.str.+INF.merge   00007904-00007908       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.+inf.merge   00007909-0000790d       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.-INF.merge   0000790e-00007912       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.-inf.merge   00007913-00007917       0x5      1  Cnst  [ Linker created ]
+  .rodata..L.str           00007918-00007937      0x20      1  Cnst  main.o
+  .rodata..L.str.3         00007938-00007957      0x20      1  Cnst  main.o
+  .rodata..L.str.4         00007958-00007983      0x2c      1  Cnst  core_main.o
+  .rodata..L.str.7         00007984-000079af      0x2c      1  Cnst  core_main.o
+  .rodata..L.str.10        000079b0-000079df      0x30      1  Cnst  core_main.o
+  .rodata..L.str.11        000079e0-000079f7      0x18      1  Cnst  core_main.o
+  .rodata..L.str.12        000079f8-00007a0f      0x18      1  Cnst  core_main.o
+  .rodata..L.str.16        00007a10-00007a27      0x18      1  Cnst  core_main.o
+  .rodata..L.str.22        00007a28-00007a43      0x1c      1  Cnst  core_main.o
+  .rodata..L.str.23        00007a44-00007a5f      0x1c      1  Cnst  core_main.o
+  .rodata..L.str.24        00007a60-00007a7b      0x1c      1  Cnst  core_main.o
+  .rodata..L.str.25        00007a7c-00007a97      0x1c      1  Cnst  core_main.o
+  .rodata..L.str           00007a98-00007a9f       0x8      1  Cnst  timers.o
+  .rodata.str.nan.merge    00007aa0-00007aa3       0x4      1  Cnst  [ Linker created ]
+  .segger.init.table       00007aa4-00007ac3      0x20      4  Cnst  [ Linker created ]
+  .segger.init.data        00007ac4-00007ad3      0x10      4  Cnst  [ Linker created ]
+  .segger.init.__SEGGER_init_zero
+                           00007ad4-00007ae9      0x16      2  Code  SEGGER_THUMB_Startup.o
+  .segger.init.__SEGGER_init_copy
+                           00007aea-00007b03      0x1a      2  Code  SEGGER_THUMB_Startup.o
+  ( UNUSED .=.+536839420 )
+                           00007b04-1fffffff  0x1fff84fc
+                                                            -  ----  -
+  .data.seed3_volatile     20000000-20000003       0x4      4  Data  core_portme.o
+  .data.default_num_contexts
+                           20000004-20000007       0x4      4  Data  core_portme.o
+  .data.uxCriticalNesting  20000008-2000000b       0x4      4  Data  port.o
+  .data.SystemCoreClock    2000000c-2000000f       0x4      4  Data  system_same54.o
+  .bss._SEGGER_RTT         20000010-20000087      0x78      4  Zero  SEGGER_RTT.o
+  .bss.pxReadyTasksLists   20000088-200000eb      0x64      4  Zero  tasks.o
+  .bss.xSuspendedTaskList  200000ec-200000ff      0x14      4  Zero  tasks.o
+  .bss.xPendingReadyList   20000100-20000113      0x14      4  Zero  tasks.o
+  .bss.xDelayedTaskList1   20000114-20000127      0x14      4  Zero  tasks.o
+  .bss.xDelayedTaskList2   20000128-2000013b      0x14      4  Zero  tasks.o
+  .bss.xActiveTimerList1   2000013c-2000014f      0x14      4  Zero  timers.o
+  .bss.xActiveTimerList2   20000150-20000163      0x14      4  Zero  timers.o
+  .bss.total_result_from_all_threads
+                           20000164-20000167       0x4      4  Zero  main.o
+  .bss.xBench2             20000168-2000016b       0x4      4  Zero  main.o
+  .bss.xBench3             2000016c-2000016f       0x4      4  Zero  main.o
+  .bss.soft_timer_ticks_counter
+                           20000170-20000173       0x4      4  Zero  main.o
+  .bss.vApplicationStackOverflowHook.xTask_temp
+                           20000174-20000177       0x4      4  Zero  main.o
+  .bss.xBench1             20000178-2000017b       0x4      4  Zero  main.o
+  .bss.SoftTimer_handle_id
+                           2000017c-2000017f       0x4      4  Zero  main.o
+  .bss.seed1_volatile      20000180-20000183       0x4      4  Zero  core_portme.o
+  .bss.seed2_volatile      20000184-20000187       0x4      4  Zero  core_portme.o
+  .bss.seed4_volatile      20000188-2000018b       0x4      4  Zero  core_portme.o
+  .bss.seed5_volatile      2000018c-2000018f       0x4      4  Zero  core_portme.o
+  .bss.pxCurrentTCB        20000190-20000193       0x4      4  Zero  tasks.o
+  .bss.uxSchedulerSuspended
+                           20000194-20000197       0x4      4  Zero  tasks.o
+  .bss.uxTopReadyPriority  20000198-2000019b       0x4      4  Zero  tasks.o
+  .bss.xSchedulerRunning   2000019c-2000019f       0x4      4  Zero  tasks.o
+  .bss.uxCurrentNumberOfTasks
+                           200001a0-200001a3       0x4      4  Zero  tasks.o
+  .bss.xIdleTaskHandle     200001a4-200001a7       0x4      4  Zero  tasks.o
+  .bss.xNextTaskUnblockTime
+                           200001a8-200001ab       0x4      4  Zero  tasks.o
+  .bss.xTickCount          200001ac-200001af       0x4      4  Zero  tasks.o
+  .bss.xYieldPending       200001b0-200001b3       0x4      4  Zero  tasks.o
+  .bss.xPendedTicks        200001b4-200001b7       0x4      4  Zero  tasks.o
+  .bss.pxDelayedTaskList   200001b8-200001bb       0x4      4  Zero  tasks.o
+  .bss.pxOverflowDelayedTaskList
+                           200001bc-200001bf       0x4      4  Zero  tasks.o
+  .bss.xNumOfOverflows     200001c0-200001c3       0x4      4  Zero  tasks.o
+  .bss.uxTaskNumber        200001c4-200001c7       0x4      4  Zero  tasks.o
+  .bss.xTimerQueue         200001c8-200001cb       0x4      4  Zero  timers.o
+  .bss.xTimerTaskHandle    200001cc-200001cf       0x4      4  Zero  timers.o
+  .bss.pxCurrentTimerList  200001d0-200001d3       0x4      4  Zero  timers.o
+  .bss.pxOverflowTimerList
+                           200001d4-200001d7       0x4      4  Zero  timers.o
+  .bss.prvSampleTimeNow.xLastTime
+                           200001d8-200001db       0x4      4  Zero  timers.o
+  .bss.ulMaxPRIGROUPValue  200001dc-200001df       0x4      4  Zero  port.o
+  .bss.pvPortMalloc.pucAlignedHeap
+                           200001e0-200001e3       0x4      4  Zero  heap_1.o
+  .bss.xNextFreeByte       200001e4-200001e7       0x4      4  Zero  heap_1.o
+  .bss.ucHeap              200001e8-200101e7   0x10000      1  Zero  heap_1.o
+  .bss._acUpBuffer         200101e8-200105e7     0x400      1  Zero  SEGGER_RTT.o
+  .bss._acDownBuffer       200105e8-200105f7      0x10      1  Zero  SEGGER_RTT.o
+  .bss.ucMaxSysCallPriority
+                           200105f8-200105f8       0x1      1  Zero  port.o
+  ( UNUSED .=.+7 )         200105f9-200105ff       0x7      -  ----  -
+  heap                     20010600-20012dff    0x2800      8  Zero  [ Linker created ]
+  ( UNUSED .=.+82432 )     20012e00-20026fff   0x14200      -  ----  -
+  stack                    20027000-2003ffff   0x19000      8  Zero  [ Linker created ]
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                   SYMBOL LIST                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Symbols by value:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  _oscctrl_init_sources    00000265       0x2      2  Code  Gb  hpl_oscctrl.o
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  coremain                 00000269     0x7e8      8  Code  Gb  core_main.o
+  time_in_secs             00000a51      0x30      8  Code  Gb  core_portme.o
+  SVC_Handler              00000a81      0x24     16  Code  Gb  port.o
+  pxCurrentTCBConst2       00000aa0               16  Code  Lc  port.o
+  crc16                    00000aa5       0xc      4  Code  Gb  core_util.o
+  PendSV_Handler           00000ab1      0x64     16  Code  Gb  port.o
+  pxCurrentTCBConst        00000b10               16  Code  Lc  port.o
+  check_data_types         00000b15       0x4      2  Code  Gb  core_util.o
+  ldexp                    00000b19      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    00000b81      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00000bc9     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  ctors$$Base              00000e5c                   ----  Gb  [ Linker created ]
+  __ctors_start__          00000e5c                   ----  Gb  [ Linker created ]
+  __ctors_start            00000e5c                   ----  Gb  [ Linker created ]
+  ctors$$Limit             00000e60                   ----  Gb  [ Linker created ]
+  __ctors_end__            00000e60                   ----  Gb  [ Linker created ]
+  __ctors_end              00000e60                   ----  Gb  [ Linker created ]
+  floor                    00000e61      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .L.str.1                 00000f24       0x4         Cnst  Lc  SEGGER_RTT.o
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    000020dc     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_aPower2     000020e0      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_ipow10      00002128      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  benchmark_thread_1       000021c9      0x80      4  Code  Gb  main.o
+  benchmark_thread_2       00002249      0x80      4  Code  Gb  main.o
+  vApplicationStackOverflowHook
+                           000022c9      0x3c      4  Code  Gb  main.o
+  main                     00002305      0xe4      4  Code  Gb  main.o
+  SEGGER_RTT_WriteNoLock   000023e9     0x164      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_Write         0000254d      0xa0      4  Code  Gb  SEGGER_RTT.o
+  printf                   000025ed      0x5c      4  Code  Gb  SEGGER_RTT_SES.o
+  calc_func                00002649      0x90      4  Code  Gb  core_list_join.o
+  core_bench_list          000026d9     0x470      4  Code  Gb  core_list_join.o
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  core_bench_matrix        00002b49      0x28      4  Code  Gb  core_matrix.o
+  matrix_test              00002b71     0xf78      4  Code  Gb  core_matrix.o
+  core_init_matrix         00003ae9     0x23c      4  Code  Gb  core_matrix.o
+  core_bench_state         00003d25     0x240      4  Code  Gb  core_state.o
+  core_state_transition    00003f65     0x148      4  Code  Gb  core_state.o
+  core_init_state          000040ad     0x14c      4  Code  Gb  core_state.o
+  crcu32                   000041f9      0x20      4  Code  Gb  core_util.o
+  xQueueGenericCreate      00004219      0x90      4  Code  Gb  queue.o
+  xQueueGenericSend        000042a9     0x2c8      4  Code  Gb  queue.o
+  prvCopyDataToQueue       00004571      0x80      4  Code  Lc  queue.o
+  prvUnlockQueue           000045f1     0x15c      4  Code  Lc  queue.o
+  xQueueGenericSendFromISR
+                           0000474d     0x1a0      4  Code  Gb  queue.o
+  xQueueReceive            000048ed     0x1e8      4  Code  Gb  queue.o
+  vQueueWaitForMessageRestricted
+                           00004ad5      0x60      4  Code  Gb  queue.o
+  xTaskCreate              00004b35     0x248      4  Code  Gb  tasks.o
+  vTaskDelay               00004d7d      0xdc      4  Code  Gb  tasks.o
+  prvAddCurrentTaskToDelayedList
+                           00004e59      0xb0      4  Code  Lc  tasks.o
+  xTaskResumeAll           00004f09     0x174      4  Code  Gb  tasks.o
+  vTaskSwitchContext       0000507d      0xa0      4  Code  Gb  tasks.o
+  vTaskStartScheduler      0000511d      0xa0      4  Code  Gb  tasks.o
+  xTaskIncrementTick       000051bd     0x180      4  Code  Gb  tasks.o
+  vTaskPlaceOnEventList    0000533d      0x40      4  Code  Gb  tasks.o
+  vTaskPlaceOnEventListRestricted
+                           0000537d      0xc8      4  Code  Gb  tasks.o
+  xTaskRemoveFromEventList
+                           00005445      0xa4      4  Code  Gb  tasks.o
+  xTaskCheckForTimeOut     000054e9      0x94      4  Code  Gb  tasks.o
+  xTaskPriorityDisinherit  0000557d      0xbc      4  Code  Gb  tasks.o
+  xTimerCreateTimerTask    00005639      0xb4      4  Code  Gb  timers.o
+  prvTimerTask             000056ed     0x2ec      4  Code  Lc  timers.o
+  xTimerCreate             000059d9      0xd8      4  Code  Gb  timers.o
+  xTimerGenericCommand     00005ab1      0x80      4  Code  Gb  timers.o
+  prvSampleTimeNow         00005b31      0xe4      4  Code  Lc  timers.o
+  xPortStartScheduler      00005c15     0x190      4  Code  Gb  port.o
+  vPortEnableVFP           00005da5       0xe      4  Code  Lc  port.o
+  prvPortStartFirstTask    00005db9      0x22      4  Code  Lc  port.o
+  SysTick_Handler          00005de1      0x34      4  Code  Gb  port.o
+  pvPortMalloc             00005e15      0x60      4  Code  Gb  heap_1.o
+  cache_init               00005e75       0x8      4  Code  Gb  hal_cache.o
+  system_init              00005e7d       0x8      4  Code  Gb  driver_init.o
+  _init_chip               00005e85      0x3c      4  Code  Gb  hpl_init.o
+  _gclk_init_generators_by_fref
+                           00005ec1      0x38      4  Code  Gb  hpl_gclk.o
+  _oscctrl_init_referenced_generators
+                           00005ef9      0x90      4  Code  Gb  hpl_oscctrl.o
+  __aeabi_dadd             00005f89     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             000061cd       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             000061d5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             0000630d     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           000064d9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           0000650d      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00006549      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00006581      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2uiz            000065b9      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            000065e1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00006621      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             0000663d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00006699      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2f              000066cd      0x52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00006721      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00006749      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00006771       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_uldivmod         00006779      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  abs                      00006849       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strcpy                   00006851      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   00006891      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  memcpy                   000068ed      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy           000068ed                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  0000693d      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       00006971      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        000069c9      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           00006a25      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           00006a41      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  vsnprintf                00006a69      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  intpat                   00006a8c      0x10      4  Cnst  Lc  core_state.o
+  floatpat                 00006a9c      0x10      4  Cnst  Lc  core_state.o
+  scipat                   00006aac      0x10      4  Cnst  Lc  core_state.o
+  errpat                   00006abc      0x10      4  Cnst  Lc  core_state.o
+  .Lswitch.table.core_init_state
+                           00006acc      0x20      4  Cnst  Lc  core_state.o
+  .Lswitch.table.core_init_state.16
+                           00006aec      0x20      4  Cnst  Lc  core_state.o
+  .Lswitch.table.get_seed_32
+                           00006b0c      0x14      4  Cnst  Lc  core_util.o
+  __SEGGER_RTL_hex_lc      00006b20      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00006b30      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  NMI_Handler              00006b41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        00006b43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              00006b45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           00006b47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SysTick_Handler          00006b49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            00006b4b                4  Code  Lc  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            00006b4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          00006b4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           00006b51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           00006b53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  00006b55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           00006b57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           00006b59                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    00006b5b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    00006b5d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   00006b5f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           00006b61                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           00006b63                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  00006b65                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  00006b67                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  00006b69                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  00006b6b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  00006b6d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  00006b6f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  00006b71                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  00006b73                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  00006b75                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  00006b77                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           00006b79                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           00006b7b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           00006b7d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           00006b7f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           00006b81                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           00006b83                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         00006b85                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     00006b87                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     00006b89                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        00006b8b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        00006b8d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        00006b8f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        00006b91                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    00006b93                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       00006b95                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       00006b97                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00006b99                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00006b9b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00006b9d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00006b9f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00006ba1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_0_IRQHandler     00006ba3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     00006ba5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     00006ba7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00006ba9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00006bab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00006bad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00006baf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00006bb1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     00006bb3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     00006bb5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     00006bb7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00006bb9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00006bbb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00006bbd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00006bbf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00006bc1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     00006bc3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     00006bc5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     00006bc7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00006bc9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00006bcb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00006bcd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00006bcf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00006bd1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     00006bd3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     00006bd5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     00006bd7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00006bd9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00006bdb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00006bdd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00006bdf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00006be1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          00006be3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          00006be5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     00006be7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00006be9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00006beb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00006bed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00006bef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00006bf1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      00006bf3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      00006bf5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      00006bf7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00006bf9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00006bfb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00006bfd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00006bff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00006c01                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      00006c03                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      00006c05                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      00006c07                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00006c09                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00006c0b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00006c0d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00006c0f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00006c11                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      00006c13                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      00006c15                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    00006c17                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00006c19                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00006c1b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC0_IRQHandler           00006c1d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00006c1f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00006c21                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           00006c23                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           00006c25                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           00006c27                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00006c29                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00006c2b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00006c2d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00006c2f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00006c31                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    00006c33                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   00006c35                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    00006c37                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   00006c39                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AC_IRQHandler            00006c3b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     00006c3d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   00006c3f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   00006c41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  00006c43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  00006c45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           00006c47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           00006c49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           00006c4b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          00006c4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           00006c4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         00006c51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          00006c53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC0_IRQHandler         00006c55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         00006c57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Reset_Handler            00006c59                4  Code  Gb  SAME54_Startup.o
+  _start                   00006c95                4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_loop                00006cbc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_end                 00006ccc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    00006cd3                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit_loop                00006cda                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00006cdb                4  Code  Wk  SEGGER_THUMB_Startup.o
+  core_list_init           00006cf9     0x39a      4  Code  Gb  core_list_join.o
+  SoftTimer_CALLBACK       00007093      0x1e      2  Code  Gb  main.o
+  vListInsert              000070b1      0x5e      4  Code  Gb  list.o
+  portable_init            0000710f       0x6      2  Code  Gb  core_portme.o
+  prvIdleTask              00007115      0x26      4  Code  Lc  tasks.o
+  portable_fini            0000713b       0x6      2  Code  Gb  core_portme.o
+  prvTaskExitError         00007141      0x3e      4  Code  Lc  port.o
+  get_seed_32              0000717f      0x1a      2  Code  Gb  core_util.o
+  vPortEnterCritical       00007199      0x4a      4  Code  Gb  port.o
+  crcu16                   000071e3     0x106      2  Code  Gb  core_util.o
+  vPortExitCritical        000072e9      0x2e      4  Code  Gb  port.o
+  vListInitialise          00007317      0x16      2  Code  Gb  list.o
+  vPortValidateInterruptPriority
+                           0000732d      0x62      4  Code  Gb  port.o
+  vListInitialiseItem      0000738f       0x6      2  Code  Gb  list.o
+  vPortFree                00007395      0x1a      4  Code  Gb  heap_1.o
+  uxListRemove             000073af      0x22      2  Code  Gb  list.o
+  _cmcc_init               000073d1      0x5a      4  Code  Gb  hpl_cmcc.o
+  vTaskInternalSetTimeOutState
+                           0000742b      0x1a      2  Code  Gb  tasks.o
+  vTaskMissedYield         00007445       0xe      2  Code  Gb  tasks.o
+  xTaskGetSchedulerState   00007453      0x26      2  Code  Gb  tasks.o
+  pxPortInitialiseStack    00007479      0x26      2  Code  Gb  port.o
+  vPortSetupTimerInterrupt
+                           0000749f      0x1e      2  Code  Wk  port.o
+  _mclk_init               000074bd       0xe      2  Code  Gb  hpl_mclk.o
+  list_known_crc           000074ca       0xa      2  Cnst  Lc  core_main.o
+  matrix_known_crc         000074d4       0xa      2  Cnst  Lc  core_main.o
+  state_known_crc          000074de       0xa      2  Cnst  Lc  core_main.o
+  start_time               000074e9       0xc      2  Code  Gb  core_portme.o
+  stop_time                000074e9       0xc      2  Code  Gb  core_portme.o
+  get_time                 000074f5      0x14      2  Code  Gb  core_portme.o
+  vListInsertEnd           00007509      0x1c      2  Code  Gb  list.o
+  vTaskSuspendAll          00007525      0x10      2  Code  Gb  tasks.o
+  xTaskGetTickCount        00007535       0xc      2  Code  Gb  tasks.o
+  _osc32kctrl_init_sources
+                           00007541      0x34      2  Code  Gb  hpl_osc32kctrl.o
+  SystemInit               00007575      0x14      2  Code  Gb  system_same54.o
+  SystemCoreClockUpdate    00007589      0x14      2  Code  Gb  system_same54.o
+  .L.str.10                0000759c      0x17         Cnst  Lc  main.o
+  .L.str.11                000075b3       0x7         Cnst  Lc  main.o
+  .L.str.12                000075ba       0x7         Cnst  Lc  main.o
+  .L.str.13                000075c1       0xb         Cnst  Lc  main.o
+  .L.str.2                 000075cc       0x7         Cnst  Lc  SEGGER_RTT.o
+  .L.str.8                 000075d3      0x2f         Cnst  Lc  core_main.o
+  .L.str.13                00007602      0x17         Cnst  Lc  core_main.o
+  .L.str.14                00007619      0x17         Cnst  Lc  core_main.o
+  .L.str.17                00007630      0x17         Cnst  Lc  core_main.o
+  .L.str.19                00007647      0x17         Cnst  Lc  core_main.o
+  .L.str.21                0000765e      0x1b         Cnst  Lc  core_main.o
+  .L.str.28                00007679      0x63         Cnst  Lc  core_main.o
+  .rodata.str.(null).merge
+                           000076dc     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .L.str.2                 000076e3      0x1e         Cnst  Lc  main.o
+  .L.str.9                 00007701       0xe         Cnst  Lc  main.o
+  .L.str.15                0000770f      0x3e         Cnst  Lc  core_main.o
+  .L.str.18                0000774d       0xe         Cnst  Lc  core_main.o
+  .L.str.20                0000775b       0x6         Cnst  Lc  core_main.o
+  .L.str.26                00007761      0x1e         Cnst  Lc  core_main.o
+  .L.str.1                 0000777f      0x15         Cnst  Lc  main.o
+  .L.str.4                 00007794      0x15         Cnst  Lc  main.o
+  .L.str                   000077a9       0x9         Cnst  Lc  SEGGER_RTT.o
+  .L.str.3                 000077b2      0x2d         Cnst  Lc  core_main.o
+  .L.str.5                 000077df      0x31         Cnst  Lc  core_main.o
+  .L.str.6                 00007810      0x2d         Cnst  Lc  core_main.o
+  .L.str.9                 0000783d      0x31         Cnst  Lc  core_main.o
+  .L.str.27                0000786e      0x11         Cnst  Lc  core_main.o
+  .L.str                   000078ff       0x5         Cnst  Lc  tasks.o
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-INF.merge   0000790e     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-inf.merge   00007913     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .L.str                   00007918      0x20         Cnst  Lc  main.o
+  .L.str.3                 00007938      0x20         Cnst  Lc  main.o
+  .L.str.4                 00007958      0x2c         Cnst  Lc  core_main.o
+  .L.str.7                 00007984      0x2c         Cnst  Lc  core_main.o
+  .L.str.10                000079b0      0x30         Cnst  Lc  core_main.o
+  .L.str.11                000079e0      0x18         Cnst  Lc  core_main.o
+  .L.str.12                000079f8      0x18         Cnst  Lc  core_main.o
+  .L.str.16                00007a10      0x18         Cnst  Lc  core_main.o
+  .L.str.22                00007a28      0x1c         Cnst  Lc  core_main.o
+  .L.str.23                00007a44      0x1c         Cnst  Lc  core_main.o
+  .L.str.24                00007a60      0x1c         Cnst  Lc  core_main.o
+  .L.str.25                00007a7c      0x1c         Cnst  Lc  core_main.o
+  .L.str                   00007a98       0x8         Cnst  Lc  timers.o
+  .rodata.str.nan.merge    00007aa0     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_init_table__    00007aa4    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_data__     00007ac4    [0x10]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_zero       00007ad5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_copy       00007aeb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __FLASH_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  seed3_volatile           20000000       0x4      4  Data  Gb  core_portme.o
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  default_num_contexts     20000004       0x4      4  Data  Gb  core_portme.o
+  uxCriticalNesting        20000008       0x4      4  Data  Lc  port.o
+  SystemCoreClock          2000000c       0x4      4  Data  Gb  system_same54.o
+  _SEGGER_RTT              20000010      0x78      4  Zero  Gb  SEGGER_RTT.o
+  pxReadyTasksLists        20000088      0x64      4  Zero  Lc  tasks.o
+  xSuspendedTaskList       200000ec      0x14      4  Zero  Lc  tasks.o
+  xPendingReadyList        20000100      0x14      4  Zero  Lc  tasks.o
+  xDelayedTaskList1        20000114      0x14      4  Zero  Lc  tasks.o
+  xDelayedTaskList2        20000128      0x14      4  Zero  Lc  tasks.o
+  xActiveTimerList1        2000013c      0x14      4  Zero  Lc  timers.o
+  xActiveTimerList2        20000150      0x14      4  Zero  Lc  timers.o
+  total_result_from_all_threads
+                           20000164       0x4      4  Zero  Gb  main.o
+  xBench2                  20000168       0x4      4  Zero  Gb  main.o
+  xBench3                  2000016c       0x4      4  Zero  Gb  main.o
+  soft_timer_ticks_counter
+                           20000170       0x4      4  Zero  Gb  main.o
+  vApplicationStackOverflowHook.xTask_temp
+                           20000174       0x4      4  Zero  Lc  main.o
+  xBench1                  20000178       0x4      4  Zero  Gb  main.o
+  SoftTimer_handle_id      2000017c       0x4      4  Zero  Gb  main.o
+  seed1_volatile           20000180       0x4      4  Zero  Gb  core_portme.o
+  seed2_volatile           20000184       0x4      4  Zero  Gb  core_portme.o
+  seed4_volatile           20000188       0x4      4  Zero  Gb  core_portme.o
+  seed5_volatile           2000018c       0x4      4  Zero  Gb  core_portme.o
+  pxCurrentTCB             20000190       0x4      4  Zero  Gb  tasks.o
+  uxSchedulerSuspended     20000194       0x4      4  Zero  Lc  tasks.o
+  uxTopReadyPriority       20000198       0x4      4  Zero  Lc  tasks.o
+  xSchedulerRunning        2000019c       0x4      4  Zero  Lc  tasks.o
+  uxCurrentNumberOfTasks   200001a0       0x4      4  Zero  Lc  tasks.o
+  xIdleTaskHandle          200001a4       0x4      4  Zero  Lc  tasks.o
+  xNextTaskUnblockTime     200001a8       0x4      4  Zero  Lc  tasks.o
+  xTickCount               200001ac       0x4      4  Zero  Lc  tasks.o
+  xYieldPending            200001b0       0x4      4  Zero  Lc  tasks.o
+  xPendedTicks             200001b4       0x4      4  Zero  Lc  tasks.o
+  pxDelayedTaskList        200001b8       0x4      4  Zero  Lc  tasks.o
+  pxOverflowDelayedTaskList
+                           200001bc       0x4      4  Zero  Lc  tasks.o
+  xNumOfOverflows          200001c0       0x4      4  Zero  Lc  tasks.o
+  uxTaskNumber             200001c4       0x4      4  Zero  Lc  tasks.o
+  xTimerQueue              200001c8       0x4      4  Zero  Lc  timers.o
+  xTimerTaskHandle         200001cc       0x4      4  Zero  Lc  timers.o
+  pxCurrentTimerList       200001d0       0x4      4  Zero  Lc  timers.o
+  pxOverflowTimerList      200001d4       0x4      4  Zero  Lc  timers.o
+  prvSampleTimeNow.xLastTime
+                           200001d8       0x4      4  Zero  Lc  timers.o
+  ulMaxPRIGROUPValue       200001dc       0x4      4  Zero  Lc  port.o
+  pvPortMalloc.pucAlignedHeap
+                           200001e0       0x4      4  Zero  Lc  heap_1.o
+  xNextFreeByte            200001e4       0x4      4  Zero  Lc  heap_1.o
+  ucHeap                   200001e8   0x10000         Zero  Lc  heap_1.o
+  _acUpBuffer              200101e8     0x400         Zero  Lc  SEGGER_RTT.o
+  _acDownBuffer            200105e8      0x10         Zero  Lc  SEGGER_RTT.o
+  ucMaxSysCallPriority     200105f8       0x1         Zero  Lc  port.o
+  heap$$Base               20010600                   ----  Gb  [ Linker created ]
+  __heap_start__           20010600                   ----  Gb  [ Linker created ]
+  __heap_start             20010600                   ----  Gb  [ Linker created ]
+  heap$$Limit              20012e00                   ----  Gb  [ Linker created ]
+  __heap_end__             20012e00                   ----  Gb  [ Linker created ]
+  __heap_end               20012e00                   ----  Gb  [ Linker created ]
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+
+Symbols by name:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  .L.str                   000077a9       0x9         Cnst  Lc  SEGGER_RTT.o
+  .L.str                   000078ff       0x5         Cnst  Lc  tasks.o
+  .L.str                   00007918      0x20         Cnst  Lc  main.o
+  .L.str                   00007a98       0x8         Cnst  Lc  timers.o
+  .L.str.1                 00000f24       0x4         Cnst  Lc  SEGGER_RTT.o
+  .L.str.1                 0000777f      0x15         Cnst  Lc  main.o
+  .L.str.10                0000759c      0x17         Cnst  Lc  main.o
+  .L.str.10                000079b0      0x30         Cnst  Lc  core_main.o
+  .L.str.11                000075b3       0x7         Cnst  Lc  main.o
+  .L.str.11                000079e0      0x18         Cnst  Lc  core_main.o
+  .L.str.12                000075ba       0x7         Cnst  Lc  main.o
+  .L.str.12                000079f8      0x18         Cnst  Lc  core_main.o
+  .L.str.13                000075c1       0xb         Cnst  Lc  main.o
+  .L.str.13                00007602      0x17         Cnst  Lc  core_main.o
+  .L.str.14                00007619      0x17         Cnst  Lc  core_main.o
+  .L.str.15                0000770f      0x3e         Cnst  Lc  core_main.o
+  .L.str.16                00007a10      0x18         Cnst  Lc  core_main.o
+  .L.str.17                00007630      0x17         Cnst  Lc  core_main.o
+  .L.str.18                0000774d       0xe         Cnst  Lc  core_main.o
+  .L.str.19                00007647      0x17         Cnst  Lc  core_main.o
+  .L.str.2                 000075cc       0x7         Cnst  Lc  SEGGER_RTT.o
+  .L.str.2                 000076e3      0x1e         Cnst  Lc  main.o
+  .L.str.20                0000775b       0x6         Cnst  Lc  core_main.o
+  .L.str.21                0000765e      0x1b         Cnst  Lc  core_main.o
+  .L.str.22                00007a28      0x1c         Cnst  Lc  core_main.o
+  .L.str.23                00007a44      0x1c         Cnst  Lc  core_main.o
+  .L.str.24                00007a60      0x1c         Cnst  Lc  core_main.o
+  .L.str.25                00007a7c      0x1c         Cnst  Lc  core_main.o
+  .L.str.26                00007761      0x1e         Cnst  Lc  core_main.o
+  .L.str.27                0000786e      0x11         Cnst  Lc  core_main.o
+  .L.str.28                00007679      0x63         Cnst  Lc  core_main.o
+  .L.str.3                 000077b2      0x2d         Cnst  Lc  core_main.o
+  .L.str.3                 00007938      0x20         Cnst  Lc  main.o
+  .L.str.4                 00007794      0x15         Cnst  Lc  main.o
+  .L.str.4                 00007958      0x2c         Cnst  Lc  core_main.o
+  .L.str.5                 000077df      0x31         Cnst  Lc  core_main.o
+  .L.str.6                 00007810      0x2d         Cnst  Lc  core_main.o
+  .L.str.7                 00007984      0x2c         Cnst  Lc  core_main.o
+  .L.str.8                 000075d3      0x2f         Cnst  Lc  core_main.o
+  .L.str.9                 00007701       0xe         Cnst  Lc  main.o
+  .L.str.9                 0000783d      0x31         Cnst  Lc  core_main.o
+  .Lswitch.table.core_init_state
+                           00006acc      0x20      4  Cnst  Lc  core_state.o
+  .Lswitch.table.core_init_state.16
+                           00006aec      0x20      4  Cnst  Lc  core_state.o
+  .Lswitch.table.get_seed_32
+                           00006b0c      0x14      4  Cnst  Lc  core_util.o
+  .rodata.str.(null).merge
+                           000076dc     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-INF.merge   0000790e     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-inf.merge   00007913     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    000020dc     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.nan.merge    00007aa0     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  AC_IRQHandler            00006c3b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    00006c33                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   00006c35                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    00006c37                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   00006c39                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           00006c4b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          00006be3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          00006be5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   00006c3f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   00006c41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     00006c3d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  00006c43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  00006c45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        00006b8b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        00006b8d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        00006b8f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        00006b91                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    00006b93                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            00006b4b                4  Code  Lc  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  00006b65                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           00006b79                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           00006b7b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           00006b7d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           00006b7f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           00006b81                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           00006b83                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  00006b67                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  00006b69                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  00006b6b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  00006b6d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  00006b6f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  00006b71                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  00006b73                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  00006b75                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  00006b77                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       00006b95                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       00006b97                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00006b99                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00006b9b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00006b9d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         00006b85                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00006bef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        00006b43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           00006c47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           00006c4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          00006b4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NMI_Handler              00006b41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     00006b87                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     00006b89                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    00006b5b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  00006b55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           00006b57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           00006b59                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           00006b51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           00006b53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00006b9f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           00006c49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00006c2f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00006c31                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00006c2d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            00006b4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         00006c51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           00000ab1      0x64     16  Code  Gb  port.o
+  PendSV_Handler           00006b47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          00006c53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00006ba1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           00006b63                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Reset_Handler            00006c59                4  Code  Gb  SAME54_Startup.o
+  SDHC0_IRQHandler         00006c55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         00006c57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SEGGER_RTT_Write         0000254d      0xa0      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_WriteNoLock   000023e9     0x164      4  Code  Gb  SEGGER_RTT.o
+  SERCOM0_0_IRQHandler     00006ba3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     00006ba5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     00006ba7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00006ba9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00006bab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00006bad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00006baf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00006bb1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     00006bb3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     00006bb5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     00006bb7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00006bb9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00006bbb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00006bbd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00006bbf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00006bc1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     00006bc3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     00006bc5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     00006bc7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00006bc9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00006bcb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00006bcd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00006bcf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00006bd1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     00006bd3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     00006bd5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     00006bd7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00006bd9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00006bdb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00006bdd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00006bdf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00006be1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   00006b5f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    00006b5d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              00000a81      0x24     16  Code  Gb  port.o
+  SVC_Handler              00006b45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SoftTimer_CALLBACK       00007093      0x1e      2  Code  Gb  main.o
+  SoftTimer_handle_id      2000017c       0x4      4  Zero  Gb  main.o
+  SysTick_Handler          00005de1      0x34      4  Code  Gb  port.o
+  SysTick_Handler          00006b49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SystemCoreClock          2000000c       0x4      4  Data  Gb  system_same54.o
+  SystemCoreClockUpdate    00007589      0x14      2  Code  Gb  system_same54.o
+  SystemInit               00007575      0x14      2  Code  Gb  system_same54.o
+  TC0_IRQHandler           00006c1d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00006c1f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00006c21                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           00006c23                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           00006c25                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           00006c27                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00006c29                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00006c2b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      00006bf3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      00006bf5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      00006bf7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00006bf9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00006bfb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00006bfd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00006bf1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00006c01                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      00006c03                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      00006c05                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      00006c07                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00006bff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00006c0b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00006c0d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00006c0f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00006c09                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      00006c13                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      00006c15                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00006c11                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00006c19                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00006c1b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    00006c17                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          00006c4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     00006be7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00006be9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00006beb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00006bed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           00006b61                4  Code  Wk  ATSAME54P20A_Vectors.o
+  _SEGGER_RTT              20000010      0x78      4  Zero  Gb  SEGGER_RTT.o
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __SEGGER_RTL_aPower2     000020e0      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00006749      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00006721      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00006771       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_lc      00006b20      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00006b30      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_ipow10      00002128      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       00006971      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           00006a41      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           00006a25      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        000069c9      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_init_copy       00007aeb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_data__     00007ac4    [0x10]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__    00007aa4    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_zero       00007ad5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  __aeabi_d2f              000066cd      0x52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2uiz            000065b9      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            000065e1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dadd             00005f89     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           000064d9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           0000650d      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00006549      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00006581      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             0000630d     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             000061d5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             000061cd       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00006699      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy           000068ed                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00006621      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             0000663d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_uldivmod         00006779      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __ctors_end              00000e60                   ----  Gb  [ Linker created ]
+  __ctors_end__            00000e60                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  __ctors_start            00000e5c                   ----  Gb  [ Linker created ]
+  __ctors_start__          00000e5c                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __heap_end               20012e00                   ----  Gb  [ Linker created ]
+  __heap_end__             20012e00                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_start             20010600                   ----  Gb  [ Linker created ]
+  __heap_start__           20010600                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  _acDownBuffer            200105e8      0x10         Zero  Lc  SEGGER_RTT.o
+  _acUpBuffer              200101e8     0x400         Zero  Lc  SEGGER_RTT.o
+  _cmcc_init               000073d1      0x5a      4  Code  Gb  hpl_cmcc.o
+  _gclk_init_generators_by_fref
+                           00005ec1      0x38      4  Code  Gb  hpl_gclk.o
+  _init_chip               00005e85      0x3c      4  Code  Gb  hpl_init.o
+  _mclk_init               000074bd       0xe      2  Code  Gb  hpl_mclk.o
+  _osc32kctrl_init_sources
+                           00007541      0x34      2  Code  Gb  hpl_osc32kctrl.o
+  _oscctrl_init_referenced_generators
+                           00005ef9      0x90      4  Code  Gb  hpl_oscctrl.o
+  _oscctrl_init_sources    00000265       0x2      2  Code  Gb  hpl_oscctrl.o
+  _start                   00006c95                4  Code  Gb  SEGGER_THUMB_Startup.o
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  abs                      00006849       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  benchmark_thread_1       000021c9      0x80      4  Code  Gb  main.o
+  benchmark_thread_2       00002249      0x80      4  Code  Gb  main.o
+  cache_init               00005e75       0x8      4  Code  Gb  hal_cache.o
+  calc_func                00002649      0x90      4  Code  Gb  core_list_join.o
+  check_data_types         00000b15       0x4      2  Code  Gb  core_util.o
+  core_bench_list          000026d9     0x470      4  Code  Gb  core_list_join.o
+  core_bench_matrix        00002b49      0x28      4  Code  Gb  core_matrix.o
+  core_bench_state         00003d25     0x240      4  Code  Gb  core_state.o
+  core_init_matrix         00003ae9     0x23c      4  Code  Gb  core_matrix.o
+  core_init_state          000040ad     0x14c      4  Code  Gb  core_state.o
+  core_list_init           00006cf9     0x39a      4  Code  Gb  core_list_join.o
+  core_state_transition    00003f65     0x148      4  Code  Gb  core_state.o
+  coremain                 00000269     0x7e8      8  Code  Gb  core_main.o
+  crc16                    00000aa5       0xc      4  Code  Gb  core_util.o
+  crcu16                   000071e3     0x106      2  Code  Gb  core_util.o
+  crcu32                   000041f9      0x20      4  Code  Gb  core_util.o
+  ctor_end                 00006ccc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00006cbc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctors$$Base              00000e5c                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  ctors$$Limit             00000e60                   ----  Gb  [ Linker created ]
+  default_num_contexts     20000004       0x4      4  Data  Gb  core_portme.o
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  errpat                   00006abc      0x10      4  Cnst  Lc  core_state.o
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  exit                     00006cdb                4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00006cda                4  Code  Lc  SEGGER_THUMB_Startup.o
+  floatpat                 00006a9c      0x10      4  Cnst  Lc  core_state.o
+  floor                    00000e61      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00000bc9     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    00000b81      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  get_seed_32              0000717f      0x1a      2  Code  Gb  core_util.o
+  get_time                 000074f5      0x14      2  Code  Gb  core_portme.o
+  heap$$Base               20010600                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  heap$$Limit              20012e00                   ----  Gb  [ Linker created ]
+  intpat                   00006a8c      0x10      4  Cnst  Lc  core_state.o
+  ldexp                    00000b19      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  list_known_crc           000074ca       0xa      2  Cnst  Lc  core_main.o
+  main                     00002305      0xe4      4  Code  Gb  main.o
+  matrix_known_crc         000074d4       0xa      2  Cnst  Lc  core_main.o
+  matrix_test              00002b71     0xf78      4  Code  Gb  core_matrix.o
+  memcpy                   000068ed      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  portable_fini            0000713b       0x6      2  Code  Gb  core_portme.o
+  portable_init            0000710f       0x6      2  Code  Gb  core_portme.o
+  printf                   000025ed      0x5c      4  Code  Gb  SEGGER_RTT_SES.o
+  prvAddCurrentTaskToDelayedList
+                           00004e59      0xb0      4  Code  Lc  tasks.o
+  prvCopyDataToQueue       00004571      0x80      4  Code  Lc  queue.o
+  prvIdleTask              00007115      0x26      4  Code  Lc  tasks.o
+  prvPortStartFirstTask    00005db9      0x22      4  Code  Lc  port.o
+  prvSampleTimeNow         00005b31      0xe4      4  Code  Lc  timers.o
+  prvSampleTimeNow.xLastTime
+                           200001d8       0x4      4  Zero  Lc  timers.o
+  prvTaskExitError         00007141      0x3e      4  Code  Lc  port.o
+  prvTimerTask             000056ed     0x2ec      4  Code  Lc  timers.o
+  prvUnlockQueue           000045f1     0x15c      4  Code  Lc  queue.o
+  pvPortMalloc             00005e15      0x60      4  Code  Gb  heap_1.o
+  pvPortMalloc.pucAlignedHeap
+                           200001e0       0x4      4  Zero  Lc  heap_1.o
+  pxCurrentTCB             20000190       0x4      4  Zero  Gb  tasks.o
+  pxCurrentTCBConst        00000b10               16  Code  Lc  port.o
+  pxCurrentTCBConst2       00000aa0               16  Code  Lc  port.o
+  pxCurrentTimerList       200001d0       0x4      4  Zero  Lc  timers.o
+  pxDelayedTaskList        200001b8       0x4      4  Zero  Lc  tasks.o
+  pxOverflowDelayedTaskList
+                           200001bc       0x4      4  Zero  Lc  tasks.o
+  pxOverflowTimerList      200001d4       0x4      4  Zero  Lc  timers.o
+  pxPortInitialiseStack    00007479      0x26      2  Code  Gb  port.o
+  pxReadyTasksLists        20000088      0x64      4  Zero  Lc  tasks.o
+  scipat                   00006aac      0x10      4  Cnst  Lc  core_state.o
+  seed1_volatile           20000180       0x4      4  Zero  Gb  core_portme.o
+  seed2_volatile           20000184       0x4      4  Zero  Gb  core_portme.o
+  seed3_volatile           20000000       0x4      4  Data  Gb  core_portme.o
+  seed4_volatile           20000188       0x4      4  Zero  Gb  core_portme.o
+  seed5_volatile           2000018c       0x4      4  Zero  Gb  core_portme.o
+  soft_timer_ticks_counter
+                           20000170       0x4      4  Zero  Gb  main.o
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  start                    00006cd3                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start_time               000074e9       0xc      2  Code  Gb  core_portme.o
+  state_known_crc          000074de       0xa      2  Cnst  Lc  core_main.o
+  stop_time                000074e9       0xc      2  Code  Gb  core_portme.o
+  strcpy                   00006851      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   00006891      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  0000693d      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  system_init              00005e7d       0x8      4  Code  Gb  driver_init.o
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  time_in_secs             00000a51      0x30      8  Code  Gb  core_portme.o
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  total_result_from_all_threads
+                           20000164       0x4      4  Zero  Gb  main.o
+  ucHeap                   200001e8   0x10000         Zero  Lc  heap_1.o
+  ucMaxSysCallPriority     200105f8       0x1         Zero  Lc  port.o
+  ulMaxPRIGROUPValue       200001dc       0x4      4  Zero  Lc  port.o
+  uxCriticalNesting        20000008       0x4      4  Data  Lc  port.o
+  uxCurrentNumberOfTasks   200001a0       0x4      4  Zero  Lc  tasks.o
+  uxListRemove             000073af      0x22      2  Code  Gb  list.o
+  uxSchedulerSuspended     20000194       0x4      4  Zero  Lc  tasks.o
+  uxTaskNumber             200001c4       0x4      4  Zero  Lc  tasks.o
+  uxTopReadyPriority       20000198       0x4      4  Zero  Lc  tasks.o
+  vApplicationStackOverflowHook
+                           000022c9      0x3c      4  Code  Gb  main.o
+  vApplicationStackOverflowHook.xTask_temp
+                           20000174       0x4      4  Zero  Lc  main.o
+  vListInitialise          00007317      0x16      2  Code  Gb  list.o
+  vListInitialiseItem      0000738f       0x6      2  Code  Gb  list.o
+  vListInsert              000070b1      0x5e      4  Code  Gb  list.o
+  vListInsertEnd           00007509      0x1c      2  Code  Gb  list.o
+  vPortEnableVFP           00005da5       0xe      4  Code  Lc  port.o
+  vPortEnterCritical       00007199      0x4a      4  Code  Gb  port.o
+  vPortExitCritical        000072e9      0x2e      4  Code  Gb  port.o
+  vPortFree                00007395      0x1a      4  Code  Gb  heap_1.o
+  vPortSetupTimerInterrupt
+                           0000749f      0x1e      2  Code  Wk  port.o
+  vPortValidateInterruptPriority
+                           0000732d      0x62      4  Code  Gb  port.o
+  vQueueWaitForMessageRestricted
+                           00004ad5      0x60      4  Code  Gb  queue.o
+  vTaskDelay               00004d7d      0xdc      4  Code  Gb  tasks.o
+  vTaskInternalSetTimeOutState
+                           0000742b      0x1a      2  Code  Gb  tasks.o
+  vTaskMissedYield         00007445       0xe      2  Code  Gb  tasks.o
+  vTaskPlaceOnEventList    0000533d      0x40      4  Code  Gb  tasks.o
+  vTaskPlaceOnEventListRestricted
+                           0000537d      0xc8      4  Code  Gb  tasks.o
+  vTaskStartScheduler      0000511d      0xa0      4  Code  Gb  tasks.o
+  vTaskSuspendAll          00007525      0x10      2  Code  Gb  tasks.o
+  vTaskSwitchContext       0000507d      0xa0      4  Code  Gb  tasks.o
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+  vsnprintf                00006a69      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  xActiveTimerList1        2000013c      0x14      4  Zero  Lc  timers.o
+  xActiveTimerList2        20000150      0x14      4  Zero  Lc  timers.o
+  xBench1                  20000178       0x4      4  Zero  Gb  main.o
+  xBench2                  20000168       0x4      4  Zero  Gb  main.o
+  xBench3                  2000016c       0x4      4  Zero  Gb  main.o
+  xDelayedTaskList1        20000114      0x14      4  Zero  Lc  tasks.o
+  xDelayedTaskList2        20000128      0x14      4  Zero  Lc  tasks.o
+  xIdleTaskHandle          200001a4       0x4      4  Zero  Lc  tasks.o
+  xNextFreeByte            200001e4       0x4      4  Zero  Lc  heap_1.o
+  xNextTaskUnblockTime     200001a8       0x4      4  Zero  Lc  tasks.o
+  xNumOfOverflows          200001c0       0x4      4  Zero  Lc  tasks.o
+  xPendedTicks             200001b4       0x4      4  Zero  Lc  tasks.o
+  xPendingReadyList        20000100      0x14      4  Zero  Lc  tasks.o
+  xPortStartScheduler      00005c15     0x190      4  Code  Gb  port.o
+  xQueueGenericCreate      00004219      0x90      4  Code  Gb  queue.o
+  xQueueGenericSend        000042a9     0x2c8      4  Code  Gb  queue.o
+  xQueueGenericSendFromISR
+                           0000474d     0x1a0      4  Code  Gb  queue.o
+  xQueueReceive            000048ed     0x1e8      4  Code  Gb  queue.o
+  xSchedulerRunning        2000019c       0x4      4  Zero  Lc  tasks.o
+  xSuspendedTaskList       200000ec      0x14      4  Zero  Lc  tasks.o
+  xTaskCheckForTimeOut     000054e9      0x94      4  Code  Gb  tasks.o
+  xTaskCreate              00004b35     0x248      4  Code  Gb  tasks.o
+  xTaskGetSchedulerState   00007453      0x26      2  Code  Gb  tasks.o
+  xTaskGetTickCount        00007535       0xc      2  Code  Gb  tasks.o
+  xTaskIncrementTick       000051bd     0x180      4  Code  Gb  tasks.o
+  xTaskPriorityDisinherit  0000557d      0xbc      4  Code  Gb  tasks.o
+  xTaskRemoveFromEventList
+                           00005445      0xa4      4  Code  Gb  tasks.o
+  xTaskResumeAll           00004f09     0x174      4  Code  Gb  tasks.o
+  xTickCount               200001ac       0x4      4  Zero  Lc  tasks.o
+  xTimerCreate             000059d9      0xd8      4  Code  Gb  timers.o
+  xTimerCreateTimerTask    00005639      0xb4      4  Code  Gb  timers.o
+  xTimerGenericCommand     00005ab1      0x80      4  Code  Gb  timers.o
+  xTimerQueue              200001c8       0x4      4  Zero  Lc  timers.o
+  xTimerTaskHandle         200001cc       0x4      4  Zero  Lc  timers.o
+  xYieldPending            200001b0       0x4      4  Zero  Lc  tasks.o
+
+Symbols by file then by name:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  AC_IRQHandler            00006c3b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    00006c33                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   00006c35                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    00006c37                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   00006c39                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           00006c4b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          00006be3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          00006be5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   00006c3f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   00006c41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     00006c3d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  00006c43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  00006c45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        00006b8b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        00006b8d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        00006b8f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        00006b91                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    00006b93                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            00006b4b                4  Code  Lc  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  00006b65                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           00006b79                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           00006b7b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           00006b7d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           00006b7f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           00006b81                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           00006b83                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  00006b67                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  00006b69                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  00006b6b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  00006b6d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  00006b6f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  00006b71                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  00006b73                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  00006b75                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  00006b77                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       00006b95                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       00006b97                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00006b99                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00006b9b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00006b9d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         00006b85                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00006bef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        00006b43                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           00006c47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           00006c4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          00006b4f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NMI_Handler              00006b41                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     00006b87                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     00006b89                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    00006b5b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  00006b55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           00006b57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           00006b59                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           00006b51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           00006b53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00006b9f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           00006c49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00006c2f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00006c31                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00006c2d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            00006b4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         00006c51                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           00006b47                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          00006c53                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00006ba1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           00006b63                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC0_IRQHandler         00006c55                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         00006c57                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_0_IRQHandler     00006ba3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     00006ba5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     00006ba7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00006ba9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00006bab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00006bad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00006baf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00006bb1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     00006bb3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     00006bb5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     00006bb7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00006bb9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00006bbb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00006bbd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00006bbf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00006bc1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     00006bc3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     00006bc5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     00006bc7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00006bc9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00006bcb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00006bcd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00006bcf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00006bd1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     00006bd3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     00006bd5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     00006bd7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00006bd9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00006bdb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00006bdd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00006bdf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00006be1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   00006b5f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    00006b5d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              00006b45                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SysTick_Handler          00006b49                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC0_IRQHandler           00006c1d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00006c1f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00006c21                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           00006c23                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           00006c25                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           00006c27                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00006c29                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00006c2b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      00006bf3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      00006bf5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      00006bf7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00006bf9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00006bfb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00006bfd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00006bf1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00006c01                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      00006c03                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      00006c05                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      00006c07                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00006bff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00006c0b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00006c0d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00006c0f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00006c09                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      00006c13                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      00006c15                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00006c11                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00006c19                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00006c1b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    00006c17                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          00006c4d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     00006be7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00006be9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00006beb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00006bed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           00006b61                4  Code  Wk  ATSAME54P20A_Vectors.o
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  Reset_Handler            00006c59                4  Code  Gb  SAME54_Startup.o
+  .L.str                   000077a9       0x9         Cnst  Lc  SEGGER_RTT.o
+  .L.str.1                 00000f24       0x4         Cnst  Lc  SEGGER_RTT.o
+  .L.str.2                 000075cc       0x7         Cnst  Lc  SEGGER_RTT.o
+  SEGGER_RTT_Write         0000254d      0xa0      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_WriteNoLock   000023e9     0x164      4  Code  Gb  SEGGER_RTT.o
+  _SEGGER_RTT              20000010      0x78      4  Zero  Gb  SEGGER_RTT.o
+  _acDownBuffer            200105e8      0x10         Zero  Lc  SEGGER_RTT.o
+  _acUpBuffer              200101e8     0x400         Zero  Lc  SEGGER_RTT.o
+  printf                   000025ed      0x5c      4  Code  Gb  SEGGER_RTT_SES.o
+  __SEGGER_init_copy       00007aeb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero       00007ad5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  _start                   00006c95                4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_end                 00006ccc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00006cbc                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00006cdb                4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00006cda                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    00006cd3                4  Code  Lc  SEGGER_THUMB_Startup.o
+  .rodata.str.(null).merge
+                           000076dc     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00007904     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00007909     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-INF.merge   0000790e     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-inf.merge   00007913     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    000020dc     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.nan.merge    00007aa0     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_lc      00006b20      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00006b30      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00000f29    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  calc_func                00002649      0x90      4  Code  Gb  core_list_join.o
+  core_bench_list          000026d9     0x470      4  Code  Gb  core_list_join.o
+  core_list_init           00006cf9     0x39a      4  Code  Gb  core_list_join.o
+  .L.str.10                000079b0      0x30         Cnst  Lc  core_main.o
+  .L.str.11                000079e0      0x18         Cnst  Lc  core_main.o
+  .L.str.12                000079f8      0x18         Cnst  Lc  core_main.o
+  .L.str.13                00007602      0x17         Cnst  Lc  core_main.o
+  .L.str.14                00007619      0x17         Cnst  Lc  core_main.o
+  .L.str.15                0000770f      0x3e         Cnst  Lc  core_main.o
+  .L.str.16                00007a10      0x18         Cnst  Lc  core_main.o
+  .L.str.17                00007630      0x17         Cnst  Lc  core_main.o
+  .L.str.18                0000774d       0xe         Cnst  Lc  core_main.o
+  .L.str.19                00007647      0x17         Cnst  Lc  core_main.o
+  .L.str.20                0000775b       0x6         Cnst  Lc  core_main.o
+  .L.str.21                0000765e      0x1b         Cnst  Lc  core_main.o
+  .L.str.22                00007a28      0x1c         Cnst  Lc  core_main.o
+  .L.str.23                00007a44      0x1c         Cnst  Lc  core_main.o
+  .L.str.24                00007a60      0x1c         Cnst  Lc  core_main.o
+  .L.str.25                00007a7c      0x1c         Cnst  Lc  core_main.o
+  .L.str.26                00007761      0x1e         Cnst  Lc  core_main.o
+  .L.str.27                0000786e      0x11         Cnst  Lc  core_main.o
+  .L.str.28                00007679      0x63         Cnst  Lc  core_main.o
+  .L.str.3                 000077b2      0x2d         Cnst  Lc  core_main.o
+  .L.str.4                 00007958      0x2c         Cnst  Lc  core_main.o
+  .L.str.5                 000077df      0x31         Cnst  Lc  core_main.o
+  .L.str.6                 00007810      0x2d         Cnst  Lc  core_main.o
+  .L.str.7                 00007984      0x2c         Cnst  Lc  core_main.o
+  .L.str.8                 000075d3      0x2f         Cnst  Lc  core_main.o
+  .L.str.9                 0000783d      0x31         Cnst  Lc  core_main.o
+  coremain                 00000269     0x7e8      8  Code  Gb  core_main.o
+  list_known_crc           000074ca       0xa      2  Cnst  Lc  core_main.o
+  matrix_known_crc         000074d4       0xa      2  Cnst  Lc  core_main.o
+  state_known_crc          000074de       0xa      2  Cnst  Lc  core_main.o
+  core_bench_matrix        00002b49      0x28      4  Code  Gb  core_matrix.o
+  core_init_matrix         00003ae9     0x23c      4  Code  Gb  core_matrix.o
+  matrix_test              00002b71     0xf78      4  Code  Gb  core_matrix.o
+  default_num_contexts     20000004       0x4      4  Data  Gb  core_portme.o
+  get_time                 000074f5      0x14      2  Code  Gb  core_portme.o
+  portable_fini            0000713b       0x6      2  Code  Gb  core_portme.o
+  portable_init            0000710f       0x6      2  Code  Gb  core_portme.o
+  seed1_volatile           20000180       0x4      4  Zero  Gb  core_portme.o
+  seed2_volatile           20000184       0x4      4  Zero  Gb  core_portme.o
+  seed3_volatile           20000000       0x4      4  Data  Gb  core_portme.o
+  seed4_volatile           20000188       0x4      4  Zero  Gb  core_portme.o
+  seed5_volatile           2000018c       0x4      4  Zero  Gb  core_portme.o
+  start_time               000074e9       0xc      2  Code  Gb  core_portme.o
+  stop_time                000074e9       0xc      2  Code  Gb  core_portme.o
+  time_in_secs             00000a51      0x30      8  Code  Gb  core_portme.o
+  .Lswitch.table.core_init_state
+                           00006acc      0x20      4  Cnst  Lc  core_state.o
+  .Lswitch.table.core_init_state.16
+                           00006aec      0x20      4  Cnst  Lc  core_state.o
+  core_bench_state         00003d25     0x240      4  Code  Gb  core_state.o
+  core_init_state          000040ad     0x14c      4  Code  Gb  core_state.o
+  core_state_transition    00003f65     0x148      4  Code  Gb  core_state.o
+  errpat                   00006abc      0x10      4  Cnst  Lc  core_state.o
+  floatpat                 00006a9c      0x10      4  Cnst  Lc  core_state.o
+  intpat                   00006a8c      0x10      4  Cnst  Lc  core_state.o
+  scipat                   00006aac      0x10      4  Cnst  Lc  core_state.o
+  .Lswitch.table.get_seed_32
+                           00006b0c      0x14      4  Cnst  Lc  core_util.o
+  check_data_types         00000b15       0x4      2  Code  Gb  core_util.o
+  crc16                    00000aa5       0xc      4  Code  Gb  core_util.o
+  crcu16                   000071e3     0x106      2  Code  Gb  core_util.o
+  crcu32                   000041f9      0x20      4  Code  Gb  core_util.o
+  get_seed_32              0000717f      0x1a      2  Code  Gb  core_util.o
+  system_init              00005e7d       0x8      4  Code  Gb  driver_init.o
+  __aeabi_d2f              000066cd      0x52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2uiz            000065b9      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            000065e1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dadd             00005f89     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           000064d9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           0000650d      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00006549      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00006581      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             0000630d     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             000061d5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             000061cd       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00006699      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00006621      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             0000663d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00006749      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00006721      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00006771       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  floor                    00000e61      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00000bc9     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    00000b81      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  ldexp                    00000b19      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  cache_init               00005e75       0x8      4  Code  Gb  hal_cache.o
+  pvPortMalloc             00005e15      0x60      4  Code  Gb  heap_1.o
+  pvPortMalloc.pucAlignedHeap
+                           200001e0       0x4      4  Zero  Lc  heap_1.o
+  ucHeap                   200001e8   0x10000         Zero  Lc  heap_1.o
+  vPortFree                00007395      0x1a      4  Code  Gb  heap_1.o
+  xNextFreeByte            200001e4       0x4      4  Zero  Lc  heap_1.o
+  _cmcc_init               000073d1      0x5a      4  Code  Gb  hpl_cmcc.o
+  _gclk_init_generators_by_fref
+                           00005ec1      0x38      4  Code  Gb  hpl_gclk.o
+  _init_chip               00005e85      0x3c      4  Code  Gb  hpl_init.o
+  _mclk_init               000074bd       0xe      2  Code  Gb  hpl_mclk.o
+  _osc32kctrl_init_sources
+                           00007541      0x34      2  Code  Gb  hpl_osc32kctrl.o
+  _oscctrl_init_referenced_generators
+                           00005ef9      0x90      4  Code  Gb  hpl_oscctrl.o
+  _oscctrl_init_sources    00000265       0x2      2  Code  Gb  hpl_oscctrl.o
+  __aeabi_uldivmod         00006779      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  abs                      00006849       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  uxListRemove             000073af      0x22      2  Code  Gb  list.o
+  vListInitialise          00007317      0x16      2  Code  Gb  list.o
+  vListInitialiseItem      0000738f       0x6      2  Code  Gb  list.o
+  vListInsert              000070b1      0x5e      4  Code  Gb  list.o
+  vListInsertEnd           00007509      0x1c      2  Code  Gb  list.o
+  .L.str                   00007918      0x20         Cnst  Lc  main.o
+  .L.str.1                 0000777f      0x15         Cnst  Lc  main.o
+  .L.str.10                0000759c      0x17         Cnst  Lc  main.o
+  .L.str.11                000075b3       0x7         Cnst  Lc  main.o
+  .L.str.12                000075ba       0x7         Cnst  Lc  main.o
+  .L.str.13                000075c1       0xb         Cnst  Lc  main.o
+  .L.str.2                 000076e3      0x1e         Cnst  Lc  main.o
+  .L.str.3                 00007938      0x20         Cnst  Lc  main.o
+  .L.str.4                 00007794      0x15         Cnst  Lc  main.o
+  .L.str.9                 00007701       0xe         Cnst  Lc  main.o
+  SoftTimer_CALLBACK       00007093      0x1e      2  Code  Gb  main.o
+  SoftTimer_handle_id      2000017c       0x4      4  Zero  Gb  main.o
+  benchmark_thread_1       000021c9      0x80      4  Code  Gb  main.o
+  benchmark_thread_2       00002249      0x80      4  Code  Gb  main.o
+  main                     00002305      0xe4      4  Code  Gb  main.o
+  soft_timer_ticks_counter
+                           20000170       0x4      4  Zero  Gb  main.o
+  total_result_from_all_threads
+                           20000164       0x4      4  Zero  Gb  main.o
+  vApplicationStackOverflowHook
+                           000022c9      0x3c      4  Code  Gb  main.o
+  vApplicationStackOverflowHook.xTask_temp
+                           20000174       0x4      4  Zero  Lc  main.o
+  xBench1                  20000178       0x4      4  Zero  Gb  main.o
+  xBench2                  20000168       0x4      4  Zero  Gb  main.o
+  xBench3                  2000016c       0x4      4  Zero  Gb  main.o
+  PendSV_Handler           00000ab1      0x64     16  Code  Gb  port.o
+  SVC_Handler              00000a81      0x24     16  Code  Gb  port.o
+  SysTick_Handler          00005de1      0x34      4  Code  Gb  port.o
+  prvPortStartFirstTask    00005db9      0x22      4  Code  Lc  port.o
+  prvTaskExitError         00007141      0x3e      4  Code  Lc  port.o
+  pxCurrentTCBConst        00000b10               16  Code  Lc  port.o
+  pxCurrentTCBConst2       00000aa0               16  Code  Lc  port.o
+  pxPortInitialiseStack    00007479      0x26      2  Code  Gb  port.o
+  ucMaxSysCallPriority     200105f8       0x1         Zero  Lc  port.o
+  ulMaxPRIGROUPValue       200001dc       0x4      4  Zero  Lc  port.o
+  uxCriticalNesting        20000008       0x4      4  Data  Lc  port.o
+  vPortEnableVFP           00005da5       0xe      4  Code  Lc  port.o
+  vPortEnterCritical       00007199      0x4a      4  Code  Gb  port.o
+  vPortExitCritical        000072e9      0x2e      4  Code  Gb  port.o
+  vPortSetupTimerInterrupt
+                           0000749f      0x1e      2  Code  Wk  port.o
+  vPortValidateInterruptPriority
+                           0000732d      0x62      4  Code  Gb  port.o
+  xPortStartScheduler      00005c15     0x190      4  Code  Gb  port.o
+  __SEGGER_RTL_ipow10      00002128      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           00006a41      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           00006a25      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        000069c9      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  vsnprintf                00006a69      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  prvCopyDataToQueue       00004571      0x80      4  Code  Lc  queue.o
+  prvUnlockQueue           000045f1     0x15c      4  Code  Lc  queue.o
+  vQueueWaitForMessageRestricted
+                           00004ad5      0x60      4  Code  Gb  queue.o
+  xQueueGenericCreate      00004219      0x90      4  Code  Gb  queue.o
+  xQueueGenericSend        000042a9     0x2c8      4  Code  Gb  queue.o
+  xQueueGenericSendFromISR
+                           0000474d     0x1a0      4  Code  Gb  queue.o
+  xQueueReceive            000048ed     0x1e8      4  Code  Gb  queue.o
+  __aeabi_memcpy           000068ed                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          000068f9                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  memcpy                   000068ed      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strcpy                   00006851      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   00006891      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  0000693d      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  SystemCoreClock          2000000c       0x4      4  Data  Gb  system_same54.o
+  SystemCoreClockUpdate    00007589      0x14      2  Code  Gb  system_same54.o
+  SystemInit               00007575      0x14      2  Code  Gb  system_same54.o
+  .L.str                   000078ff       0x5         Cnst  Lc  tasks.o
+  prvAddCurrentTaskToDelayedList
+                           00004e59      0xb0      4  Code  Lc  tasks.o
+  prvIdleTask              00007115      0x26      4  Code  Lc  tasks.o
+  pxCurrentTCB             20000190       0x4      4  Zero  Gb  tasks.o
+  pxDelayedTaskList        200001b8       0x4      4  Zero  Lc  tasks.o
+  pxOverflowDelayedTaskList
+                           200001bc       0x4      4  Zero  Lc  tasks.o
+  pxReadyTasksLists        20000088      0x64      4  Zero  Lc  tasks.o
+  uxCurrentNumberOfTasks   200001a0       0x4      4  Zero  Lc  tasks.o
+  uxSchedulerSuspended     20000194       0x4      4  Zero  Lc  tasks.o
+  uxTaskNumber             200001c4       0x4      4  Zero  Lc  tasks.o
+  uxTopReadyPriority       20000198       0x4      4  Zero  Lc  tasks.o
+  vTaskDelay               00004d7d      0xdc      4  Code  Gb  tasks.o
+  vTaskInternalSetTimeOutState
+                           0000742b      0x1a      2  Code  Gb  tasks.o
+  vTaskMissedYield         00007445       0xe      2  Code  Gb  tasks.o
+  vTaskPlaceOnEventList    0000533d      0x40      4  Code  Gb  tasks.o
+  vTaskPlaceOnEventListRestricted
+                           0000537d      0xc8      4  Code  Gb  tasks.o
+  vTaskStartScheduler      0000511d      0xa0      4  Code  Gb  tasks.o
+  vTaskSuspendAll          00007525      0x10      2  Code  Gb  tasks.o
+  vTaskSwitchContext       0000507d      0xa0      4  Code  Gb  tasks.o
+  xDelayedTaskList1        20000114      0x14      4  Zero  Lc  tasks.o
+  xDelayedTaskList2        20000128      0x14      4  Zero  Lc  tasks.o
+  xIdleTaskHandle          200001a4       0x4      4  Zero  Lc  tasks.o
+  xNextTaskUnblockTime     200001a8       0x4      4  Zero  Lc  tasks.o
+  xNumOfOverflows          200001c0       0x4      4  Zero  Lc  tasks.o
+  xPendedTicks             200001b4       0x4      4  Zero  Lc  tasks.o
+  xPendingReadyList        20000100      0x14      4  Zero  Lc  tasks.o
+  xSchedulerRunning        2000019c       0x4      4  Zero  Lc  tasks.o
+  xSuspendedTaskList       200000ec      0x14      4  Zero  Lc  tasks.o
+  xTaskCheckForTimeOut     000054e9      0x94      4  Code  Gb  tasks.o
+  xTaskCreate              00004b35     0x248      4  Code  Gb  tasks.o
+  xTaskGetSchedulerState   00007453      0x26      2  Code  Gb  tasks.o
+  xTaskGetTickCount        00007535       0xc      2  Code  Gb  tasks.o
+  xTaskIncrementTick       000051bd     0x180      4  Code  Gb  tasks.o
+  xTaskPriorityDisinherit  0000557d      0xbc      4  Code  Gb  tasks.o
+  xTaskRemoveFromEventList
+                           00005445      0xa4      4  Code  Gb  tasks.o
+  xTaskResumeAll           00004f09     0x174      4  Code  Gb  tasks.o
+  xTickCount               200001ac       0x4      4  Zero  Lc  tasks.o
+  xYieldPending            200001b0       0x4      4  Zero  Lc  tasks.o
+  .L.str                   00007a98       0x8         Cnst  Lc  timers.o
+  prvSampleTimeNow         00005b31      0xe4      4  Code  Lc  timers.o
+  prvSampleTimeNow.xLastTime
+                           200001d8       0x4      4  Zero  Lc  timers.o
+  prvTimerTask             000056ed     0x2ec      4  Code  Lc  timers.o
+  pxCurrentTimerList       200001d0       0x4      4  Zero  Lc  timers.o
+  pxOverflowTimerList      200001d4       0x4      4  Zero  Lc  timers.o
+  xActiveTimerList1        2000013c      0x14      4  Zero  Lc  timers.o
+  xActiveTimerList2        20000150      0x14      4  Zero  Lc  timers.o
+  xTimerCreate             000059d9      0xd8      4  Code  Gb  timers.o
+  xTimerCreateTimerTask    00005639      0xb4      4  Code  Gb  timers.o
+  xTimerGenericCommand     00005ab1      0x80      4  Code  Gb  timers.o
+  xTimerQueue              200001c8       0x4      4  Zero  Lc  timers.o
+  xTimerTaskHandle         200001cc       0x4      4  Zero  Lc  timers.o
+  __SEGGER_RTL_aPower2     000020e0      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       00006971      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                           00007b04                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __SEGGER_init_data__     00007ac4    [0x10]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__    00007aa4    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  __ctors_end              00000e60                   ----  Gb  [ Linker created ]
+  __ctors_end__            00000e60                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  __ctors_start            00000e5c                   ----  Gb  [ Linker created ]
+  __ctors_start__          00000e5c                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __heap_end               20012e00                   ----  Gb  [ Linker created ]
+  __heap_end__             20012e00                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_start             20010600                   ----  Gb  [ Linker created ]
+  __heap_start__           20010600                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  ctors$$Base              00000e5c                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  ctors$$Limit             00000e60                   ----  Gb  [ Linker created ]
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  heap$$Base               20010600                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  heap$$Limit              20012e00                   ----  Gb  [ Linker created ]
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINK SUMMARY                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Region summary:
+
+  Name        Range                  Size              Used            Unused    Alignment Loss
+  ----------  -----------------  --------  ----------------  ----------------  ----------------
+  FLASH       00000000-000fffff   1048576     31490   3.00%   1017086  97.00%         0   0.00%
+  RAM         20000000-2003ffff    262144    179705  68.55%     82439  31.45%         0   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks

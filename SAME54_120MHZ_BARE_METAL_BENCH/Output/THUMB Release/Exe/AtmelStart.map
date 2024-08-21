@@ -1,0 +1,2013 @@
+***************************************************************************************
+***                                                                                 ***
+***                                LINK INFORMATION                                 ***
+***                                                                                 ***
+***************************************************************************************
+
+Linker version:
+
+  SEGGER Linker 3.12.0 compiled Oct 16 2020 19:06:29
+  Copyright (c) 2017-2020 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 MODULE SUMMARY                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Memory use by input file:
+
+  Object File                                     RX Code   RO Data   RW Data   ZI Data
+  ---------------------------------------------  --------  --------  --------  --------
+  ATSAME54P20A_Vectors.o                              892                              
+  AtmelStart_lto.o                                  12698       158         4      1194
+  SAME54_Startup.o                                     60                              
+  SEGGER_THUMB_Startup.o                              148                              
+  [ Linker created ]                                           1253                    
+  ---------------------------------------------  --------  --------  --------  --------
+  Subtotal (objects):                               13798      1411         4      1194
+  ---------------------------------------------  --------  --------  --------  --------
+  libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a             8300       264                    
+  ---------------------------------------------  --------  --------  --------  --------
+  Subtotal (archives):                               8300       264                    
+  =============================================  ========  ========  ========  ========
+  Grand total (objects + archives):                 22098      1675         4      1194
+  =============================================  ========  ========  ========  ========
+
+Detailed memory use by individual object file:
+
+  Object File                                     RX Code   RO Data   RW Data   ZI Data
+  ---------------------------------------------  --------  --------  --------  --------
+  AtmelStart_lto.o                                  12698       158         4      1194
+  ATSAME54P20A_Vectors.o                              892                              
+  SAME54_Startup.o                                     60                              
+  SEGGER_THUMB_Startup.o                              148                              
+  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     1860                              
+  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     1120                              
+  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      208                              
+  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                        8                              
+  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      236                              
+  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                       52                              
+  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                       88        72                    
+  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                      196       160                    
+  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+                                                     4532        32                    
+  [ Linker created ]                                           1253                    
+  =============================================  ========  ========  ========  ========
+  Total:                                            22098      1675         4      1194
+  =============================================  ========  ========  ========  ========
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 SECTION DETAIL                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Sections by address:
+
+  Section                  Range                  Size  Align  Type  Object File
+  -----------------------  -----------------  --------  -----  ----  -----------
+  .vectors                 00000000-00000263     0x264      4  Code  ATSAME54P20A_Vectors.o
+  .text.SystemInit         00000264-00000265       0x2      2  Code  AtmelStart_lto.o
+  ( UNUSED .=.+2 )         00000266-00000267       0x2      -  ----  -
+  .text.main               00000268-00001487    0x1220      8  Code  AtmelStart_lto.o
+  .text.libc.ldexp         00001488-000014ef      0x68      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.frexp         000014f0-00001537      0x48      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.fmod          00001538-000017cb     0x294      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .init_array              000017cc-000017cf       0x4      4  ----  SAME54_Startup.o
+  .text.libc.floor         000017d0-00001893      0xc4      8  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    00001894-00001897       0x4      1  Cnst  [ Linker created ]
+  .text.libc.__SEGGER_RTL_vfprintf_short_float_long
+                           00001898-00002a4b    0x11b4      8  Code  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.RTT.merge    00002a4c-00002a4f       0x4      1  Cnst  [ Linker created ]
+  .rodata.libc.__SEGGER_RTL_aPower2
+                           00002a50-00002a97      0x48      8  Cnst  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.libc.__SEGGER_RTL_ipow10
+                           00002a98-00002b37      0xa0      8  Cnst  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.SEGGER_RTT_WriteNoLock
+                           00002b38-00002caf     0x178      4  Code  AtmelStart_lto.o
+  .text.printf             00002cb0-00002d7b      0xcc      4  Code  AtmelStart_lto.o
+  .text.calc_func          00002d7c-000043b7    0x163c      4  Code  AtmelStart_lto.o
+  .text.core_bench_list    000043b8-00004857     0x4a0      4  Code  AtmelStart_lto.o
+  .text.__aeabi_dadd       00004858-00004a9b     0x244      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dsub       00004a9c-00004aa3       0x8      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dmul       00004aa4-00004bdb     0x138      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ddiv       00004bdc-00004da7     0x1cc      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpeq     00004da8-00004ddb      0x34      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpge     00004ddc-00004e17      0x3c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmpgt     00004e18-00004e4f      0x38      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_dcmplt     00004e50-00004e87      0x38      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_d2uiz      00004e88-00004eaf      0x28      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_d2ulz      00004eb0-00004eef      0x40      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ui2d       00004ef0-00004f0b      0x1c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_ul2d       00004f0c-00004f67      0x5c      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_f2d        00004f68-00004f9b      0x34      4  Code  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_isnan
+                           00004f9c-00004fc3      0x28      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_isinf
+                           00004fc4-00004feb      0x28      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_float64_signbit
+                           00004fec-00004ff3       0x8      4  Code  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.__aeabi_uldivmod   00004ff4-000050c3      0xd0      4  Code  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.abs           000050c4-000050cb       0x8      4  Code  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.strcpy             000050cc-0000510b      0x40      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.strlen             0000510c-00005167      0x5c      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.memcpy             00005168-000051b7      0x50      4  Code  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.strnlen       000051b8-000051eb      0x34      4  Code  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_pow10
+                           000051ec-00005243      0x58      4  Code  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_putc
+                           00005244-0000529f      0x5c      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_print_padding
+                           000052a0-000052bb      0x1c      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.__SEGGER_RTL_pre_padding
+                           000052bc-000052e3      0x28      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .text.libc.vsnprintf     000052e4-00005307      0x24      4  Code  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata..Lswitch.table.core_init_state
+                           00005308-00005327      0x20      4  Cnst  AtmelStart_lto.o
+  .rodata.cst32            00005328-00005347      0x20      4  Cnst  AtmelStart_lto.o
+  .rodata.intpat           00005348-00005357      0x10      4  Cnst  AtmelStart_lto.o
+  .rodata.floatpat         00005358-00005367      0x10      4  Cnst  AtmelStart_lto.o
+  .rodata.scipat           00005368-00005377      0x10      4  Cnst  AtmelStart_lto.o
+  .rodata.errpat           00005378-00005387      0x10      4  Cnst  AtmelStart_lto.o
+  .rodata.libc.__SEGGER_RTL_hex_lc
+                           00005388-00005397      0x10      4  Cnst  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.libc.__SEGGER_RTL_hex_uc
+                           00005398-000053a7      0x10      4  Cnst  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .init                    000053a8-000054bf     0x118      4  Code  ATSAME54P20A_Vectors.o
+  .init                    000054c0-000054fb      0x3c      4  Code  SAME54_Startup.o
+  .init                    000054fc-0000555f      0x64      4  Code  SEGGER_THUMB_Startup.o
+  .text.core_state_transition
+                           00005560-000056a1     0x142      4  Code  AtmelStart_lto.o
+  .text.crcu16             000056a2-000057b7     0x116      2  Code  AtmelStart_lto.o
+  .rodata.list_known_crc   000057b8-000057c1       0xa      2  Cnst  AtmelStart_lto.o
+  .rodata.matrix_known_crc
+                           000057c2-000057cb       0xa      2  Cnst  AtmelStart_lto.o
+  .rodata.state_known_crc  000057cc-000057d5       0xa      2  Cnst  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6-00005838      0x63      1  Cnst  [ Linker created ]
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839-00005867      0x2f      1  Cnst  [ Linker created ]
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868-00005882      0x1b      1  Cnst  [ Linker created ]
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883-00005899      0x17      1  Cnst  [ Linker created ]
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a-000058b0      0x17      1  Cnst  [ Linker created ]
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1-000058c7      0x17      1  Cnst  [ Linker created ]
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8-000058de      0x17      1  Cnst  [ Linker created ]
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df-000058f5      0x17      1  Cnst  [ Linker created ]
+  .rodata.str.(null).merge
+                           000058f6-000058fc       0x7      1  Cnst  [ Linker created ]
+  .rodata.str.SEGGER.merge
+                           000058fd-00005903       0x7      1  Cnst  [ Linker created ]
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904-00005941      0x3e      1  Cnst  [ Linker created ]
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942-0000595b      0x1a      1  Cnst  [ Linker created ]
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c-0000596d      0x12      1  Cnst  [ Linker created ]
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e-0000597b       0xe      1  Cnst  [ Linker created ]
+  .rodata.str._/_%s.merge  0000597c-00005981       0x6      1  Cnst  [ Linker created ]
+  .rodata.str.STACK.merge  00005982-00005987       0x6      1  Cnst  [ Linker created ]
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988-000059d0      0x49      1  Cnst  [ Linker created ]
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1-00005a01      0x31      1  Cnst  [ Linker created ]
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02-00005a32      0x31      1  Cnst  [ Linker created ]
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33-00005a5f      0x2d      1  Cnst  [ Linker created ]
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60-00005a8c      0x2d      1  Cnst  [ Linker created ]
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d-00005a9d      0x11      1  Cnst  [ Linker created ]
+  .rodata.str.+0.64400.merge
+                           00005a9e-00005aa6       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.+0.6e-12.merge
+                           00005aa7-00005aaf       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.-.123e-2.merge
+                           00005ab0-00005ab8       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.-110.700.merge
+                           00005ab9-00005ac1       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.-87e+832.merge
+                           00005ac2-00005aca       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.-T.T++Tq.merge
+                           00005acb-00005ad3       0x9      1  Cnst  [ Linker created ]
+  .rodata.str..1234500.merge
+                           00005ad4-00005adc       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.1T3.4e4z.merge
+                           00005add-00005ae5       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.34.0e-T^.merge
+                           00005ae6-00005aee       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.35.54400.merge
+                           00005aef-00005af7       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.5.500e+3.merge
+                           00005af8-00005b00       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.T0.3e-1F.merge
+                           00005b01-00005b09       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.Terminal.merge
+                           00005b0a-00005b12       0x9      1  Cnst  [ Linker created ]
+  .rodata.str.+122.merge   00005b13-00005b17       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.+INF.merge   00005b18-00005b1c       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.+inf.merge   00005b1d-00005b21       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.-874.merge   00005b22-00005b26       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.-INF.merge   00005b27-00005b2b       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.-inf.merge   00005b2c-00005b30       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.1234.merge   00005b31-00005b35       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.5012.merge   00005b36-00005b3a       0x5      1  Cnst  [ Linker created ]
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b-00005b6a      0x30      1  Cnst  [ Linker created ]
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b-00005b96      0x2c      1  Cnst  [ Linker created ]
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97-00005bc2      0x2c      1  Cnst  [ Linker created ]
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3-00005bde      0x1c      1  Cnst  [ Linker created ]
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf-00005bfa      0x1c      1  Cnst  [ Linker created ]
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb-00005c16      0x1c      1  Cnst  [ Linker created ]
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17-00005c32      0x1c      1  Cnst  [ Linker created ]
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33-00005c4a      0x18      1  Cnst  [ Linker created ]
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b-00005c62      0x18      1  Cnst  [ Linker created ]
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63-00005c7a      0x18      1  Cnst  [ Linker created ]
+  .rodata.str.(flags_unknown).merge
+                           00005c7b-00005c8a      0x10      1  Cnst  [ Linker created ]
+  .rodata.str.nan.merge    00005c8b-00005c8e       0x4      1  Cnst  [ Linker created ]
+  ( UNUSED .=.+1 )         00005c8f-00005c8f       0x1      -  ----  -
+  .segger.init.table       00005c90-00005caf      0x20      4  Cnst  [ Linker created ]
+  .segger.init.data        00005cb0-00005cb3       0x4      4  Cnst  [ Linker created ]
+  .segger.init.__SEGGER_init_zero
+                           00005cb4-00005cc9      0x16      2  Code  SEGGER_THUMB_Startup.o
+  .segger.init.__SEGGER_init_copy
+                           00005cca-00005ce3      0x1a      2  Code  SEGGER_THUMB_Startup.o
+  ( UNUSED .=.+536847132 )
+                           00005ce4-1fffffff  0x1fffa31c
+                                                            -  ----  -
+  .data.seed3_volatile     20000000-20000003       0x4      4  Data  AtmelStart_lto.o
+  .bss._SEGGER_RTT         20000004-2000007b      0x78      4  Zero  AtmelStart_lto.o
+  .bss.seed1_volatile      2000007c-2000007f       0x4      4  Zero  AtmelStart_lto.o
+  .bss.seed2_volatile      20000080-20000083       0x4      4  Zero  AtmelStart_lto.o
+  .bss.seed4_volatile      20000084-20000087       0x4      4  Zero  AtmelStart_lto.o
+  .bss.seed5_volatile      20000088-2000008b       0x4      4  Zero  AtmelStart_lto.o
+  .bss.start_time_val      2000008c-2000008f       0x4      4  Zero  AtmelStart_lto.o
+  .bss.stop_time_val       20000090-20000093       0x4      4  Zero  AtmelStart_lto.o
+  .bss.start_time.prev_t   20000094-20000097       0x4      4  Zero  AtmelStart_lto.o
+  .bss.stop_time.prev_t    20000098-2000009b       0x4      4  Zero  AtmelStart_lto.o
+  .bss._acUpBuffer         2000009c-2000049b     0x400      1  Zero  AtmelStart_lto.o
+  .bss._acDownBuffer       2000049c-200004ab      0x10      1  Zero  AtmelStart_lto.o
+  .bss.start_time.state    200004ac-200004ac       0x1      1  Zero  AtmelStart_lto.o
+  .bss.stop_time.state     200004ad-200004ad       0x1      1  Zero  AtmelStart_lto.o
+  ( UNUSED .=.+2 )         200004ae-200004af       0x2      -  ----  -
+  heap                     200004b0-20002caf    0x2800      8  Zero  [ Linker created ]
+  ( UNUSED .=.+148304 )    20002cb0-20026fff   0x24350      -  ----  -
+  stack                    20027000-2003ffff   0x19000      8  Zero  [ Linker created ]
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                   SYMBOL LIST                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Symbols by value:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  SystemCoreClockUpdate    00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  SystemInit               00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  main                     00000269    0x1220      8  Code  Gb  AtmelStart_lto.o
+  ldexp                    00001489      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    000014f1      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00001539     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __ctors_start            000017cc                   ----  Gb  [ Linker created ]
+  ctors$$Base              000017cc                   ----  Gb  [ Linker created ]
+  __ctors_start__          000017cc                   ----  Gb  [ Linker created ]
+  __ctors_end__            000017d0                   ----  Gb  [ Linker created ]
+  __ctors_end              000017d0                   ----  Gb  [ Linker created ]
+  ctors$$Limit             000017d0                   ----  Gb  [ Linker created ]
+  floor                    000017d1      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    00001894     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  __SEGGER_RTL_aPower2     00002a50      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_ipow10      00002a98      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  SEGGER_RTT_WriteNoLock   00002b39     0x178      4  Code  Lc  AtmelStart_lto.o
+  printf                   00002cb1      0xcc      4  Code  Lc  AtmelStart_lto.o
+  calc_func                00002d7d    0x163c      4  Code  Lc  AtmelStart_lto.o
+  core_bench_list          000043b9     0x4a0      4  Code  Lc  AtmelStart_lto.o
+  __aeabi_dadd             00004859     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             00004a9d       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             00004aa5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             00004bdd     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           00004da9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           00004ddd      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00004e19      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00004e51      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2uiz            00004e89      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            00004eb1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00004ef1      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             00004f0d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00004f69      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00004f9d      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00004fc5      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00004fed       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_uldivmod         00004ff5      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  abs                      000050c5       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strcpy                   000050cd      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   0000510d      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  memcpy                   00005169      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy           00005169                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  000051b9      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       000051ed      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        00005245      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           000052a1      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           000052bd      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  vsnprintf                000052e5      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .Lswitch.table.core_init_state
+                           00005308      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  .Lswitch.table.core_init_state.16
+                           00005328      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  intpat                   00005348      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  floatpat                 00005358      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  scipat                   00005368      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  errpat                   00005378      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  __SEGGER_RTL_hex_lc      00005388      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00005398      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  NMI_Handler              000053a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        000053ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              000053ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           000053af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SysTick_Handler          000053b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            000053b3                4  Code  Lc  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            000053b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          000053b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           000053b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           000053bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  000053bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           000053bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           000053c1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    000053c3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    000053c5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   000053c7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           000053c9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           000053cb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  000053cd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  000053cf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  000053d1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  000053d3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  000053d5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  000053d7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  000053d9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  000053db                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  000053dd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  000053df                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           000053e1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           000053e3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           000053e5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           000053e7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           000053e9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           000053eb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         000053ed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     000053ef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     000053f1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        000053f3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        000053f5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        000053f7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        000053f9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    000053fb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       000053fd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       000053ff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00005401                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00005403                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00005405                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00005407                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00005409                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_0_IRQHandler     0000540b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     0000540d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     0000540f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00005411                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00005413                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00005415                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00005417                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00005419                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     0000541b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     0000541d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     0000541f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00005421                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00005423                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00005425                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00005427                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00005429                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     0000542b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     0000542d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     0000542f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00005431                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00005433                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00005435                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00005437                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00005439                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     0000543b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     0000543d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     0000543f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00005441                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00005443                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00005445                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00005447                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00005449                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          0000544b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          0000544d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     0000544f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00005451                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00005453                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00005455                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00005457                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00005459                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      0000545b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      0000545d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      0000545f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00005461                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00005463                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00005465                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00005467                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00005469                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      0000546b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      0000546d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      0000546f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00005471                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00005473                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00005475                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00005477                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00005479                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      0000547b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      0000547d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    0000547f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00005481                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00005483                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC0_IRQHandler           00005485                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00005487                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00005489                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           0000548b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           0000548d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           0000548f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00005491                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00005493                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00005495                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00005497                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00005499                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    0000549b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   0000549d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    0000549f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   000054a1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AC_IRQHandler            000054a3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     000054a5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   000054a7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   000054a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  000054ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  000054ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           000054af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           000054b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           000054b3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          000054b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           000054b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         000054b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          000054bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC0_IRQHandler         000054bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         000054bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Reset_Handler            000054c1                4  Code  Gb  SAME54_Startup.o
+  _start                   000054fd                4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_loop                00005524                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_end                 00005534                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    0000553b                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit_loop                00005542                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00005543                4  Code  Wk  SEGGER_THUMB_Startup.o
+  core_state_transition    00005561     0x142      4  Code  Lc  AtmelStart_lto.o
+  crcu16                   000056a3     0x116      2  Code  Lc  AtmelStart_lto.o
+  list_known_crc           000057b8       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  matrix_known_crc         000057c2       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  state_known_crc          000057cc       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(null).merge
+                           000058f6     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+0.64400.merge
+                           00005a9e     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+0.6e-12.merge
+                           00005aa7     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-.123e-2.merge
+                           00005ab0     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-110.700.merge
+                           00005ab9     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-87e+832.merge
+                           00005ac2     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-T.T++Tq.merge
+                           00005acb     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str..1234500.merge
+                           00005ad4     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.1T3.4e4z.merge
+                           00005add     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.34.0e-T^.merge
+                           00005ae6     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.35.54400.merge
+                           00005aef     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5.500e+3.merge
+                           00005af8     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.T0.3e-1F.merge
+                           00005b01     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+122.merge   00005b13     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-874.merge   00005b22     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-INF.merge   00005b27     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-inf.merge   00005b2c     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.1234.merge   00005b31     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5012.merge   00005b36     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.nan.merge    00005c8b     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_init_table__    00005c90    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_data__     00005cb0     [0x4]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_zero       00005cb5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_copy       00005ccb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __FLASH_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  seed3_volatile           20000000       0x4      4  Data  Lc  AtmelStart_lto.o
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  _SEGGER_RTT              20000004      0x78      4  Zero  Lc  AtmelStart_lto.o
+  seed1_volatile           2000007c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed2_volatile           20000080       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed4_volatile           20000084       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed5_volatile           20000088       0x4      4  Zero  Lc  AtmelStart_lto.o
+  start_time_val           2000008c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  stop_time_val            20000090       0x4      4  Zero  Lc  AtmelStart_lto.o
+  start_time.prev_t        20000094       0x4      4  Zero  Lc  AtmelStart_lto.o
+  stop_time.prev_t         20000098       0x4      4  Zero  Lc  AtmelStart_lto.o
+  _acUpBuffer              2000009c     0x400         Zero  Lc  AtmelStart_lto.o
+  _acDownBuffer            2000049c      0x10         Zero  Lc  AtmelStart_lto.o
+  start_time.state         200004ac       0x1         Zero  Lc  AtmelStart_lto.o
+  stop_time.state          200004ad       0x1         Zero  Lc  AtmelStart_lto.o
+  heap$$Base               200004b0                   ----  Gb  [ Linker created ]
+  __heap_start__           200004b0                   ----  Gb  [ Linker created ]
+  __heap_start             200004b0                   ----  Gb  [ Linker created ]
+  heap$$Limit              20002cb0                   ----  Gb  [ Linker created ]
+  __heap_end__             20002cb0                   ----  Gb  [ Linker created ]
+  __heap_end               20002cb0                   ----  Gb  [ Linker created ]
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+
+Symbols by name:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  .Lswitch.table.core_init_state
+                           00005308      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  .Lswitch.table.core_init_state.16
+                           00005328      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(null).merge
+                           000058f6     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+0.64400.merge
+                           00005a9e     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+0.6e-12.merge
+                           00005aa7     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+122.merge   00005b13     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-.123e-2.merge
+                           00005ab0     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-110.700.merge
+                           00005ab9     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-874.merge   00005b22     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-87e+832.merge
+                           00005ac2     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-INF.merge   00005b27     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-T.T++Tq.merge
+                           00005acb     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-inf.merge   00005b2c     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str..1234500.merge
+                           00005ad4     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.1234.merge   00005b31     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.1T3.4e4z.merge
+                           00005add     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.34.0e-T^.merge
+                           00005ae6     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.35.54400.merge
+                           00005aef     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5.500e+3.merge
+                           00005af8     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5012.merge   00005b36     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.NAN.merge    00001894     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.T0.3e-1F.merge
+                           00005b01     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.nan.merge    00005c8b     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  AC_IRQHandler            000054a3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    0000549b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   0000549d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    0000549f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   000054a1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           000054b3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          0000544b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          0000544d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   000054a7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   000054a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     000054a5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  000054ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  000054ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        000053f3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        000053f5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        000053f7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        000053f9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    000053fb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            000053b3                4  Code  Lc  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  000053cd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           000053e1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           000053e3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           000053e5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           000053e7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           000053e9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           000053eb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  000053cf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  000053d1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  000053d3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  000053d5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  000053d7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  000053d9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  000053db                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  000053dd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  000053df                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       000053fd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       000053ff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00005401                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00005403                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00005405                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         000053ed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00005457                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        000053ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           000054af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           000054b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          000053b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NMI_Handler              000053a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     000053ef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     000053f1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    000053c3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  000053bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           000053bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           000053c1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           000053b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           000053bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00005407                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           000054b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00005497                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00005499                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00005495                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            000053b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         000054b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           000053af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          000054bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00005409                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           000053cb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Reset_Handler            000054c1                4  Code  Gb  SAME54_Startup.o
+  SDHC0_IRQHandler         000054bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         000054bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SEGGER_RTT_WriteNoLock   00002b39     0x178      4  Code  Lc  AtmelStart_lto.o
+  SERCOM0_0_IRQHandler     0000540b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     0000540d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     0000540f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00005411                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00005413                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00005415                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00005417                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00005419                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     0000541b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     0000541d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     0000541f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00005421                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00005423                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00005425                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00005427                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00005429                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     0000542b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     0000542d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     0000542f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00005431                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00005433                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00005435                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00005437                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00005439                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     0000543b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     0000543d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     0000543f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00005441                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00005443                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00005445                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00005447                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00005449                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   000053c7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    000053c5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              000053ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SysTick_Handler          000053b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SystemCoreClockUpdate    00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  SystemInit               00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  TC0_IRQHandler           00005485                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00005487                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00005489                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           0000548b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           0000548d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           0000548f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00005491                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00005493                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      0000545b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      0000545d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      0000545f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00005461                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00005463                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00005465                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00005459                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00005469                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      0000546b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      0000546d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      0000546f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00005467                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00005473                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00005475                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00005477                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00005471                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      0000547b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      0000547d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00005479                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00005481                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00005483                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    0000547f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          000054b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     0000544f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00005451                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00005453                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00005455                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           000053c9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  _SEGGER_RTT              20000004      0x78      4  Zero  Lc  AtmelStart_lto.o
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __SEGGER_RTL_aPower2     00002a50      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00004fc5      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00004f9d      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00004fed       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_lc      00005388      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00005398      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_ipow10      00002a98      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       000051ed      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           000052bd      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           000052a1      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        00005245      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_init_copy       00005ccb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_data__     00005cb0     [0x4]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__    00005c90    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_zero       00005cb5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  __aeabi_d2uiz            00004e89      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            00004eb1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dadd             00004859     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           00004da9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           00004ddd      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00004e19      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00004e51      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             00004bdd     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             00004aa5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             00004a9d       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00004f69      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy           00005169                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00004ef1      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             00004f0d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_uldivmod         00004ff5      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __ctors_end              000017d0                   ----  Gb  [ Linker created ]
+  __ctors_end__            000017d0                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  __ctors_start            000017cc                   ----  Gb  [ Linker created ]
+  __ctors_start__          000017cc                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __heap_end               20002cb0                   ----  Gb  [ Linker created ]
+  __heap_end__             20002cb0                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_start             200004b0                   ----  Gb  [ Linker created ]
+  __heap_start__           200004b0                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  _acDownBuffer            2000049c      0x10         Zero  Lc  AtmelStart_lto.o
+  _acUpBuffer              2000009c     0x400         Zero  Lc  AtmelStart_lto.o
+  _start                   000054fd                4  Code  Gb  SEGGER_THUMB_Startup.o
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  abs                      000050c5       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  calc_func                00002d7d    0x163c      4  Code  Lc  AtmelStart_lto.o
+  core_bench_list          000043b9     0x4a0      4  Code  Lc  AtmelStart_lto.o
+  core_state_transition    00005561     0x142      4  Code  Lc  AtmelStart_lto.o
+  crcu16                   000056a3     0x116      2  Code  Lc  AtmelStart_lto.o
+  ctor_end                 00005534                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00005524                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctors$$Base              000017cc                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  ctors$$Limit             000017d0                   ----  Gb  [ Linker created ]
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  errpat                   00005378      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  exit                     00005543                4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00005542                4  Code  Lc  SEGGER_THUMB_Startup.o
+  floatpat                 00005358      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  floor                    000017d1      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00001539     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    000014f1      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  heap$$Base               200004b0                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  heap$$Limit              20002cb0                   ----  Gb  [ Linker created ]
+  intpat                   00005348      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  ldexp                    00001489      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  list_known_crc           000057b8       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  main                     00000269    0x1220      8  Code  Gb  AtmelStart_lto.o
+  matrix_known_crc         000057c2       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  memcpy                   00005169      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  printf                   00002cb1      0xcc      4  Code  Lc  AtmelStart_lto.o
+  scipat                   00005368      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  seed1_volatile           2000007c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed2_volatile           20000080       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed3_volatile           20000000       0x4      4  Data  Lc  AtmelStart_lto.o
+  seed4_volatile           20000084       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed5_volatile           20000088       0x4      4  Zero  Lc  AtmelStart_lto.o
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  start                    0000553b                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start_time.prev_t        20000094       0x4      4  Zero  Lc  AtmelStart_lto.o
+  start_time.state         200004ac       0x1         Zero  Lc  AtmelStart_lto.o
+  start_time_val           2000008c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  state_known_crc          000057cc       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  stop_time.prev_t         20000098       0x4      4  Zero  Lc  AtmelStart_lto.o
+  stop_time.state          200004ad       0x1         Zero  Lc  AtmelStart_lto.o
+  stop_time_val            20000090       0x4      4  Zero  Lc  AtmelStart_lto.o
+  strcpy                   000050cd      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   0000510d      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  000051b9      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+  vsnprintf                000052e5      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+
+Symbols by file then by name:
+
+  Symbol                   Value         Size  Align  Type      Object File
+  -----------------------  --------  --------  -----  --------  -----------
+  AC_IRQHandler            000054a3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_OTHER_IRQHandler    0000549b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC0_RESRDY_IRQHandler   0000549d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_OTHER_IRQHandler    0000549f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ADC1_RESRDY_IRQHandler   000054a1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  AES_IRQHandler           000054b3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN0_IRQHandler          0000544b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  CAN1_IRQHandler          0000544d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_0_IRQHandler   000054a7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_EMPTY_1_IRQHandler   000054a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_OTHER_IRQHandler     000054a5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_0_IRQHandler  000054ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DAC_RESRDY_1_IRQHandler  000054ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_0_IRQHandler        000053f3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_1_IRQHandler        000053f5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_2_IRQHandler        000053f7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_3_IRQHandler        000053f9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  DMAC_OTHER_IRQHandler    000053fb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  Dummy_Handler            000053b3                4  Code  Lc  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_0_IRQHandler  000053cd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_10_IRQHandler
+                           000053e1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_11_IRQHandler
+                           000053e3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_12_IRQHandler
+                           000053e5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_13_IRQHandler
+                           000053e7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_14_IRQHandler
+                           000053e9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_15_IRQHandler
+                           000053eb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_1_IRQHandler  000053cf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_2_IRQHandler  000053d1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_3_IRQHandler  000053d3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_4_IRQHandler  000053d5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_5_IRQHandler  000053d7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_6_IRQHandler  000053d9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_7_IRQHandler  000053db                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_8_IRQHandler  000053dd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EIC_EXTINT_9_IRQHandler  000053df                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_0_IRQHandler       000053fd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_1_IRQHandler       000053ff                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_2_IRQHandler       00005401                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_3_IRQHandler       00005403                4  Code  Wk  ATSAME54P20A_Vectors.o
+  EVSYS_OTHER_IRQHandler   00005405                4  Code  Wk  ATSAME54P20A_Vectors.o
+  FREQM_IRQHandler         000053ed                4  Code  Wk  ATSAME54P20A_Vectors.o
+  GMAC_IRQHandler          00005457                4  Code  Wk  ATSAME54P20A_Vectors.o
+  HardFault_Handler        000053ab                4  Code  Wk  ATSAME54P20A_Vectors.o
+  I2S_IRQHandler           000054af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  ICM_IRQHandler           000054b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  MCLK_IRQHandler          000053b7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NMI_Handler              000053a9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_0_IRQHandler     000053ef                4  Code  Wk  ATSAME54P20A_Vectors.o
+  NVMCTRL_1_IRQHandler     000053f1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSC32KCTRL_IRQHandler    000053c3                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DFLL_IRQHandler  000053bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL0_IRQHandler
+                           000053bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_DPLL1_IRQHandler
+                           000053c1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC0_IRQHandler
+                           000053b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  OSCCTRL_XOSC1_IRQHandler
+                           000053bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PAC_IRQHandler           00005407                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PCC_IRQHandler           000054b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC0_IRQHandler      00005497                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_MC1_IRQHandler      00005499                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PDEC_OTHER_IRQHandler    00005495                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PM_IRQHandler            000053b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PUKCC_IRQHandler         000054b9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  PendSV_Handler           000053af                4  Code  Wk  ATSAME54P20A_Vectors.o
+  QSPI_IRQHandler          000054bb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RAMECC_IRQHandler        00005409                4  Code  Wk  ATSAME54P20A_Vectors.o
+  RTC_IRQHandler           000053cb                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC0_IRQHandler         000054bd                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SDHC1_IRQHandler         000054bf                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_0_IRQHandler     0000540b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_1_IRQHandler     0000540d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_2_IRQHandler     0000540f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM0_OTHER_IRQHandler
+                           00005411                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_0_IRQHandler     00005413                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_1_IRQHandler     00005415                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_2_IRQHandler     00005417                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM1_OTHER_IRQHandler
+                           00005419                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_0_IRQHandler     0000541b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_1_IRQHandler     0000541d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_2_IRQHandler     0000541f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM2_OTHER_IRQHandler
+                           00005421                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_0_IRQHandler     00005423                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_1_IRQHandler     00005425                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_2_IRQHandler     00005427                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM3_OTHER_IRQHandler
+                           00005429                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_0_IRQHandler     0000542b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_1_IRQHandler     0000542d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_2_IRQHandler     0000542f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM4_OTHER_IRQHandler
+                           00005431                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_0_IRQHandler     00005433                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_1_IRQHandler     00005435                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_2_IRQHandler     00005437                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM5_OTHER_IRQHandler
+                           00005439                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_0_IRQHandler     0000543b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_1_IRQHandler     0000543d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_2_IRQHandler     0000543f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM6_OTHER_IRQHandler
+                           00005441                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_0_IRQHandler     00005443                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_1_IRQHandler     00005445                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_2_IRQHandler     00005447                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SERCOM7_OTHER_IRQHandler
+                           00005449                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_BODDET_IRQHandler   000053c7                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SUPC_OTHER_IRQHandler    000053c5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SVC_Handler              000053ad                4  Code  Wk  ATSAME54P20A_Vectors.o
+  SysTick_Handler          000053b1                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC0_IRQHandler           00005485                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC1_IRQHandler           00005487                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC2_IRQHandler           00005489                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC3_IRQHandler           0000548b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC4_IRQHandler           0000548d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC5_IRQHandler           0000548f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC6_IRQHandler           00005491                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TC7_IRQHandler           00005493                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC0_IRQHandler      0000545b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC1_IRQHandler      0000545d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC2_IRQHandler      0000545f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC3_IRQHandler      00005461                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC4_IRQHandler      00005463                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_MC5_IRQHandler      00005465                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC0_OTHER_IRQHandler    00005459                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC0_IRQHandler      00005469                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC1_IRQHandler      0000546b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC2_IRQHandler      0000546d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_MC3_IRQHandler      0000546f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC1_OTHER_IRQHandler    00005467                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC0_IRQHandler      00005473                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC1_IRQHandler      00005475                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_MC2_IRQHandler      00005477                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC2_OTHER_IRQHandler    00005471                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC0_IRQHandler      0000547b                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_MC1_IRQHandler      0000547d                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC3_OTHER_IRQHandler    00005479                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC0_IRQHandler      00005481                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_MC1_IRQHandler      00005483                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TCC4_OTHER_IRQHandler    0000547f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  TRNG_IRQHandler          000054b5                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_OTHER_IRQHandler     0000544f                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_SOF_HSOF_IRQHandler  00005451                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT0_IRQHandler    00005453                4  Code  Wk  ATSAME54P20A_Vectors.o
+  USB_TRCPT1_IRQHandler    00005455                4  Code  Wk  ATSAME54P20A_Vectors.o
+  WDT_IRQHandler           000053c9                4  Code  Wk  ATSAME54P20A_Vectors.o
+  _vectors                 00000000   [0x264]      4  Code  Gb  ATSAME54P20A_Vectors.o
+  _vectors_end             00000264                4  Code  Lc  ATSAME54P20A_Vectors.o
+  .Lswitch.table.core_init_state
+                           00005308      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  .Lswitch.table.core_init_state.16
+                           00005328      0x20      4  Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.(flags_unknown).merge
+                           00005c7b    [0x10]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+0.64400.merge
+                           00005a9e     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+0.6e-12.merge
+                           00005aa7     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.+122.merge   00005b13     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-.123e-2.merge
+                           00005ab0     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-110.700.merge
+                           00005ab9     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-874.merge   00005b22     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-87e+832.merge
+                           00005ac2     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.-T.T++Tq.merge
+                           00005acb     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str..1234500.merge
+                           00005ad4     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.1234.merge   00005b31     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.1T3.4e4z.merge
+                           00005add     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_performance_run_parameters_for_coremark.\n.merge
+                           00005a33    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.2K_validation_run_parameters_for_coremark.\n.merge
+                           00005b6b    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.34.0e-T^.merge
+                           00005ae6     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.35.54400.merge
+                           00005aef     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5.500e+3.merge
+                           00005af8     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.5012.merge   00005b36     [0x5]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_performance_run_parameters_for_coremark.\n.merge
+                           00005a60    [0x2d]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.6k_validation_run_parameters_for_coremark.\n.merge
+                           00005b97    [0x2c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Cannot_validate_operation_for_these_seed_values,_please_compare_with_results_on_a_known_platform.\n.merge
+                           000057d6    [0x63]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_flags___:_%s\n.merge
+                           00005883    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Compiler_version_:_%s\n.merge
+                           0000589a    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_1.0_:_%f_/_%s_%s.merge
+                           00005942    [0x1a]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.CoreMark_Size____:_%lu\n.merge
+                           00005c33    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Correct_operation_validated._See_README.md_for_run_and_reporting_rules.\n.merge
+                           00005988    [0x49]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.ERROR!_Must_execute_for_at_least_10_secs_for_a_valid_result!\n.merge
+                           00005904    [0x3e]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Errors_detected\n.merge
+                           00005a8d    [0x11]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.GCCscc_10.6.6.merge
+                           0000596e     [0xe]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations/Sec___:_%f\n.merge
+                           000058b1    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Iterations_______:_%lu\n.merge
+                           00005c4b    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Memory_location__:_%s\n.merge
+                           000058c8    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Profile_generation_run_parameters_for_coremark.\n.merge
+                           000059d1    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Program_Start!_\r\n.merge
+                           0000595c    [0x12]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.RTT.merge    00002a4c     [0x4]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.SEGGER.merge
+                           000058fd     [0x7]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.STACK.merge  00005982     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.T0.3e-1F.merge
+                           00005b01     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Terminal.merge
+                           00005b0a     [0x9]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_ticks______:_%lu\n.merge
+                           00005c63    [0x18]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.Total_time_(secs):_%f\n.merge
+                           000058df    [0x17]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcfinal______:_0x%04x\n.merge
+                           00005bc3    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crclist_______:_0x%04x\n.merge
+                           00005bdf    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcmatrix_____:_0x%04x\n.merge
+                           00005bfb    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%d]crcstate______:_0x%04x\n.merge
+                           00005c17    [0x1c]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_list_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005839    [0x2f]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_matrix_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005a02    [0x31]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.[%u]ERROR!_state_crc_0x%04x_-_should_be_0x%04x\n.merge
+                           00005b3b    [0x30]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str._/_%s.merge  0000597c     [0x6]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  .rodata.str.seedcrc__________:_0x%04x\n.merge
+                           00005868    [0x1b]         Cnst  Lc  AtmelStart_lto.o
+  SEGGER_RTT_WriteNoLock   00002b39     0x178      4  Code  Lc  AtmelStart_lto.o
+  SystemCoreClockUpdate    00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  SystemInit               00000265       0x2      2  Code  Gb  AtmelStart_lto.o
+  _SEGGER_RTT              20000004      0x78      4  Zero  Lc  AtmelStart_lto.o
+  _acDownBuffer            2000049c      0x10         Zero  Lc  AtmelStart_lto.o
+  _acUpBuffer              2000009c     0x400         Zero  Lc  AtmelStart_lto.o
+  calc_func                00002d7d    0x163c      4  Code  Lc  AtmelStart_lto.o
+  core_bench_list          000043b9     0x4a0      4  Code  Lc  AtmelStart_lto.o
+  core_state_transition    00005561     0x142      4  Code  Lc  AtmelStart_lto.o
+  crcu16                   000056a3     0x116      2  Code  Lc  AtmelStart_lto.o
+  errpat                   00005378      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  floatpat                 00005358      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  intpat                   00005348      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  list_known_crc           000057b8       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  main                     00000269    0x1220      8  Code  Gb  AtmelStart_lto.o
+  matrix_known_crc         000057c2       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  printf                   00002cb1      0xcc      4  Code  Lc  AtmelStart_lto.o
+  scipat                   00005368      0x10      4  Cnst  Lc  AtmelStart_lto.o
+  seed1_volatile           2000007c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed2_volatile           20000080       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed3_volatile           20000000       0x4      4  Data  Lc  AtmelStart_lto.o
+  seed4_volatile           20000084       0x4      4  Zero  Lc  AtmelStart_lto.o
+  seed5_volatile           20000088       0x4      4  Zero  Lc  AtmelStart_lto.o
+  start_time.prev_t        20000094       0x4      4  Zero  Lc  AtmelStart_lto.o
+  start_time.state         200004ac       0x1         Zero  Lc  AtmelStart_lto.o
+  start_time_val           2000008c       0x4      4  Zero  Lc  AtmelStart_lto.o
+  state_known_crc          000057cc       0xa      2  Cnst  Lc  AtmelStart_lto.o
+  stop_time.prev_t         20000098       0x4      4  Zero  Lc  AtmelStart_lto.o
+  stop_time.state          200004ad       0x1         Zero  Lc  AtmelStart_lto.o
+  stop_time_val            20000090       0x4      4  Zero  Lc  AtmelStart_lto.o
+  Reset_Handler            000054c1                4  Code  Gb  SAME54_Startup.o
+  __SEGGER_init_copy       00005ccb                2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero       00005cb5                2  Code  Gb  SEGGER_THUMB_Startup.o
+  _start                   000054fd                4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_end                 00005534                4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00005524                4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00005543                4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00005542                4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    0000553b                4  Code  Lc  SEGGER_THUMB_Startup.o
+  .rodata.str.(null).merge
+                           000058f6     [0x7]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+INF.merge   00005b18     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.+inf.merge   00005b1d     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-INF.merge   00005b27     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.-inf.merge   00005b2c     [0x5]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.NAN.merge    00001894     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  .rodata.str.nan.merge    00005c8b     [0x4]         Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_lc      00005388      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_hex_uc      00005398      0x10      4  Cnst  Lc  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf    00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_vfprintf_short_float_long
+                           00001899    0x11b4      8  Code  Gb  __SEGGER_RTL_vfprintf_short_float_long.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2uiz            00004e89      0x26      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_d2ulz            00004eb1      0x3e      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dadd             00004859     0x242      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpeq           00004da9      0x32      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpge           00004ddd      0x3c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmpgt           00004e19      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dcmplt           00004e51      0x38      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ddiv             00004bdd     0x1ca      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dmul             00004aa5     0x136      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_dsub             00004a9d       0x8      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_f2d              00004f69      0x34      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ui2d             00004ef1      0x1c      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_ul2d             00004f0d      0x5a      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isinf
+                           00004fc5      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_isnan
+                           00004f9d      0x28      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_float64_signbit
+                           00004fed       0x8      4  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  floor                    000017d1      0xc4      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  fmod                     00001539     0x294      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  frexp                    000014f1      0x48      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  ldexp                    00001489      0x68      8  Code  Gb  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_uldivmod         00004ff5      0xce      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  abs                      000050c5       0x8      4  Code  Gb  intops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_ipow10      00002a98      0xa0      8  Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pre_padding
+                           000052bd      0x28      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_print_padding
+                           000052a1      0x1a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_putc        00005245      0x5a      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  vsnprintf                000052e5      0x22      4  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy           00005169                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy4          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __aeabi_memcpy8          00005175                4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  memcpy                   00005169      0x50      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strcpy                   000050cd      0x40      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strlen                   0000510d      0x5c      4  Code  Wk  strasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  strnlen                  000051b9      0x32      4  Code  Gb  strops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_aPower2     00002a50      0x48      8  Cnst  Lc  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __SEGGER_RTL_pow10       000051ed      0x58      4  Code  Gb  utilops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a)
+  __FLASH1_segment_end__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__  00100000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_end__    00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_size__   00100000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_start__  00000000                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                           00005ce4                   ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  [ Linker created ]
+  __HEAPSIZE__             00002800                   ----  Gb  [ Linker created ]
+  __RAM1_segment_end__     20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_size__    00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_start__   20000000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_end__      20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_size__     00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_start__    20000000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__
+                           20040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__
+                           00040000                   ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  [ Linker created ]
+  __SEGGER_init_data__     00005cb0     [0x4]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__    00005c90    [0x20]      4  Cnst  Lc  [ Linker created ]
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  [ Linker created ]
+  __STACKSIZE__            00019000                   ----  Gb  [ Linker created ]
+  __ctors_end              000017d0                   ----  Gb  [ Linker created ]
+  __ctors_end__            000017d0                   ----  Gb  [ Linker created ]
+  __ctors_size             00000004                   ----  Gb  [ Linker created ]
+  __ctors_size__           00000004                   ----  Gb  [ Linker created ]
+  __ctors_start            000017cc                   ----  Gb  [ Linker created ]
+  __ctors_start__          000017cc                   ----  Gb  [ Linker created ]
+  __dtors_end              00000266                   ----  Gb  [ Linker created ]
+  __dtors_end__            00000266                   ----  Gb  [ Linker created ]
+  __dtors_size             00000000                   ----  Gb  [ Linker created ]
+  __dtors_size__           00000000                   ----  Gb  [ Linker created ]
+  __dtors_start            00000266                   ----  Gb  [ Linker created ]
+  __dtors_start__          00000266                   ----  Gb  [ Linker created ]
+  __exidx_end              00000266                   ----  Gb  [ Linker created ]
+  __exidx_end__            00000266                   ----  Gb  [ Linker created ]
+  __exidx_size             00000000                   ----  Gb  [ Linker created ]
+  __exidx_size__           00000000                   ----  Gb  [ Linker created ]
+  __exidx_start            00000266                   ----  Gb  [ Linker created ]
+  __exidx_start__          00000266                   ----  Gb  [ Linker created ]
+  __heap_end               20002cb0                   ----  Gb  [ Linker created ]
+  __heap_end__             20002cb0                   ----  Gb  [ Linker created ]
+  __heap_size              00002800                   ----  Gb  [ Linker created ]
+  __heap_size__            00002800                   ----  Gb  [ Linker created ]
+  __heap_start             200004b0                   ----  Gb  [ Linker created ]
+  __heap_start__           200004b0                   ----  Gb  [ Linker created ]
+  __stack_end              20040000                   ----  Gb  [ Linker created ]
+  __stack_end__            20040000                   ----  Gb  [ Linker created ]
+  __stack_size             00019000                   ----  Gb  [ Linker created ]
+  __stack_size__           00019000                   ----  Gb  [ Linker created ]
+  __stack_start            20027000                   ----  Gb  [ Linker created ]
+  __stack_start__          20027000                   ----  Gb  [ Linker created ]
+  __tbss_end               20000000                   ----  Gb  [ Linker created ]
+  __tbss_end__             20000000                   ----  Gb  [ Linker created ]
+  __tbss_size              00000000                   ----  Gb  [ Linker created ]
+  __tbss_size__            00000000                   ----  Gb  [ Linker created ]
+  __tbss_start             20000000                   ----  Gb  [ Linker created ]
+  __tbss_start__           20000000                   ----  Gb  [ Linker created ]
+  __tdata_end              20000000                   ----  Gb  [ Linker created ]
+  __tdata_end__            20000000                   ----  Gb  [ Linker created ]
+  __tdata_load_end         00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_end__       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_size        00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_size__      00000000                   ----  Gb  [ Linker created ]
+  __tdata_load_start       00000266                   ----  Gb  [ Linker created ]
+  __tdata_load_start__     00000266                   ----  Gb  [ Linker created ]
+  __tdata_size             00000000                   ----  Gb  [ Linker created ]
+  __tdata_size__           00000000                   ----  Gb  [ Linker created ]
+  __tdata_start            20000000                   ----  Gb  [ Linker created ]
+  __tdata_start__          20000000                   ----  Gb  [ Linker created ]
+  __tls_end                20000000                   ----  Gb  [ Linker created ]
+  __tls_end__              20000000                   ----  Gb  [ Linker created ]
+  __tls_size               00000000                   ----  Gb  [ Linker created ]
+  __tls_size__             00000000                   ----  Gb  [ Linker created ]
+  __tls_start              20000000                   ----  Gb  [ Linker created ]
+  __tls_start__            20000000                   ----  Gb  [ Linker created ]
+  __vectors_end            00000264                   ----  Gb  [ Linker created ]
+  __vectors_end__          00000264                   ----  Gb  [ Linker created ]
+  __vectors_ram_end        20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_end__      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size       00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_size__     00000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start      20000000                   ----  Gb  [ Linker created ]
+  __vectors_ram_start__    20000000                   ----  Gb  [ Linker created ]
+  __vectors_size           00000264                   ----  Gb  [ Linker created ]
+  __vectors_size__         00000264                   ----  Gb  [ Linker created ]
+  __vectors_start          00000000                   ----  Gb  [ Linker created ]
+  __vectors_start__        00000000                   ----  Gb  [ Linker created ]
+  ctors$$Base              000017cc                   ----  Gb  [ Linker created ]
+  ctors$$Length            00000004                   ----  Gb  [ Linker created ]
+  ctors$$Limit             000017d0                   ----  Gb  [ Linker created ]
+  dtors$$Base              00000266                   ----  Gb  [ Linker created ]
+  dtors$$Length            00000000                   ----  Gb  [ Linker created ]
+  dtors$$Limit             00000266                   ----  Gb  [ Linker created ]
+  exidx$$Base              00000266                   ----  Gb  [ Linker created ]
+  exidx$$Length            00000000                   ----  Gb  [ Linker created ]
+  exidx$$Limit             00000266                   ----  Gb  [ Linker created ]
+  heap$$Base               200004b0                   ----  Gb  [ Linker created ]
+  heap$$Length             00002800                   ----  Gb  [ Linker created ]
+  heap$$Limit              20002cb0                   ----  Gb  [ Linker created ]
+  stack$$Base              20027000                   ----  Gb  [ Linker created ]
+  stack$$Length            00019000                   ----  Gb  [ Linker created ]
+  stack$$Limit             20040000                   ----  Gb  [ Linker created ]
+  tbss$$Base               20000000                   ----  Gb  [ Linker created ]
+  tbss$$Length             00000000                   ----  Gb  [ Linker created ]
+  tbss$$Limit              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Base              20000000                   ----  Gb  [ Linker created ]
+  tdata$$Length            00000000                   ----  Gb  [ Linker created ]
+  tdata$$Limit             20000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Base         00000266                   ----  Gb  [ Linker created ]
+  tdata_load$$Length       00000000                   ----  Gb  [ Linker created ]
+  tdata_load$$Limit        00000266                   ----  Gb  [ Linker created ]
+  tls$$Base                20000000                   ----  Gb  [ Linker created ]
+  tls$$Length              00000000                   ----  Gb  [ Linker created ]
+  tls$$Limit               20000000                   ----  Gb  [ Linker created ]
+  vectors$$Base            00000000                   ----  Gb  [ Linker created ]
+  vectors$$Length          00000264                   ----  Gb  [ Linker created ]
+  vectors$$Limit           00000264                   ----  Gb  [ Linker created ]
+  vectors_ram$$Base        20000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Length      00000000                   ----  Gb  [ Linker created ]
+  vectors_ram$$Limit       20000000                   ----  Gb  [ Linker created ]
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINK SUMMARY                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Region summary:
+
+  Name        Range                  Size              Used            Unused    Alignment Loss
+  ----------  -----------------  --------  ----------------  ----------------  ----------------
+  FLASH       00000000-000fffff   1048576     23777   2.27%   1024799  97.73%         0   0.00%
+  RAM         20000000-2003ffff    262144    113838  43.43%    148306  56.57%         0   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks
